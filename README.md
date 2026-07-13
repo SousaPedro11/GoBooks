@@ -1,158 +1,314 @@
 # Awesome Go Books
-[![Links](https://github.com/dariubs/GoBooks/actions/workflows/links.yml/badge.svg)](https://github.com/dariubs/GoBooks/actions/workflows/links.yml) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+[![Validate README](https://github.com/dariubs/GoBooks/actions/workflows/validate.yml/badge.svg)](https://github.com/dariubs/GoBooks/actions/workflows/validate.yml) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
-GoBooks is a carefully curated collection of the best Go books available for developers of all levels, from beginners learning the basics of Golang to experienced engineers looking for advanced concurrency, performance, and system design topics. This repository gathers top Golang books covering core Go concepts, real-world patterns, best practices, and modern Go development, making it easy to find the right learning resource in one place. Whether you’re searching for your first Golang book, want to deepen your understanding of Go internals, or are looking for the most recommended and up-to-date Go programming books, GoBooks serves as a trusted reference for the Go community.
+GoBooks is a curated collection of the best Go books for developers at every level—from beginners to engineers working on concurrency, performance, and system design. One place to find the right learning resource.
 
+**Other languages:** [Español](gobooks/README-es.md) · [中文](gobooks/README-zh.md) · [Português](gobooks/README-pt.md) · [Русский](gobooks/README-ru.md) · [Deutsch](gobooks/README-de.md) · [فارسی](gobooks/README-fa.md)
 
-- [Awesome Go Books](#awesome-go-books)
-  - [Starter Books](#starter-books)
-    - [The Go Programming Language](the-go-programming-language)
-    - [Learning Go *Free*](learning-go)
-    - [Get Programming with Go](get-programming-with-go)
-    - [API Foundations in Go](#api-foundations-in-go)
-    - [Go for Javascript Developers *Free*](go-for-javascript-developers)
-    - [The Go Workshop](the-go-workshop)
-    - [Head First Go](head-first-go)
-    - [How to Code in Go](how-to-code-in-go)
-    - [Go, from the beginning *Free*](go-from-the-beginning-free)
-    - [Practical Go Lessons *Free*](practical-go-lessons-free)
-    - [Pro Go](pro-go)
-    - [Go for DevOps](go-for-devops)
-    - [gRPC Microservices in Go](grpc-microservices-in-go)
-    - [Learn Go With Tests *Free*](learn-go-with-tests-free)
-    - [Go 101 *Free*](go-101-free)
-    - [Persian - Go Programming Language *Free*](go-programming-language)
-    - [gRPC Go for Professionals](grpc-go-for-professionals)
-    - [Learn Go with Pocket-Sized Projects](learn-go-with-pocket-sized-projects)
-    - [Go Faster](go-faster)
-    - [Shipping Go](shipping-go)
-    - [Learning Go: An Idiomatic Approach to Real-World Go Programming, 2nd Edition](learning-go-an-idiomatic-approach-to-real-world-go-programming-2nd-edition)
-    - [Go Programming - From Beginner to Professional, 2nd Edition](go-programming---from-beginner-to-professional-2nd-edition)   
-    - [The Deeper Love of Go](the-deeper-love-of-go)
-
-  - [Advanced Books](#advanced-books)
-    - [2018 - Hands-On Dependency Injection in Go](#2018---hands-on-dependency-injection-in-go)
-    - [2018 - Security with Go](#2018---security-with-go)
-    - [2019 - A Go Developer's Notebook](#2019---a-go-developers-notebook)
-    - [2019 - Learn Data Structures and Algorithms with Golang](#2019---learn-data-structures-and-algorithms-with-golang)
-    - [2020 - Black Hat Go](#2020---black-hat-go)
-    - [2020 - Writing An Interpreter In Go](#2020---writing-an-interpreter-in-go)
-    - [2020 - Writing A Compiler In Go](#2020---writing-a-compiler-in-go)
-    - [2020 - Hands-On Software Engineering with Golang](#2020---hands-on-software-engineering-with-golang)
-    - [2021 - Building Distributed Applications in Gin](#2021---building-distributed-applications-in-gin)
-    - [2021 - Network Programming with Go](#2021---network-programming-with-go)
-    - [2021 - Powerful Command-Line Applications in Go](#2021---powerful-command-line-applications-in-go)
-    - [2021 - Effective Go](#2021---effective-go)
-    - [2021 - Cloud Native Go - Building Reliable Services in Unreliable Environments](#2021---cloud-native-go---building-reliable-services-in-unreliable-environments)
-    - [2021 - Everyday Go](#2021---everyday-go)
-    - [2021 - Practical Go: Building Scalable Network and Non-Network Applications](#2021---practical-go-building-scalable-network-and-non-network-applications)
-    - [2022 - Microservices with Go](#2022---microservices-with-go)
-    - [2022 - Event-Driven Architecture in Golang](#2022---event-driven-architecture-in-golang)
-    - [2022 - Efficient Go: Data-Driven Performance Optimization](#2022---efficient-go-data-driven-performance-optimization)
-    - [2022 - 100 Go Mistakes and How to Avoid Them](#2022---100-go-mistakes-and-how-to-avoid-them)
-    - [2022 - Know Go: Generics](#2022---know-go-generics)
-    - [2022 - The Power of Go: Tests](#2022---the-power-of-go-tests)
-    - [2022 - Beyond Effective Go: Part 1 - Achieving High-Performance Code](#2022---beyond-effective-go-part-1---achieving-high-performance-code)
-    - [2022 - Domain-Driven Design with Golang](#2022---domain-driven-design-with-golang)
-    - [2023 - Go programming language secure coding practices guide *Free*](#2023---go-programming-language-secure-coding-practices-guide-free)
-    - [2023 - Network Automation with Go](#2023---network-automation-with-go)
-    - [2024 - The Power of Go: Tools](#2024---the-power-of-go-tools)
-    - [2024 - Build an Orchestrator in Go](#2024---build-an-orchestrator-in-go)
-    - [2024 - Explore Go: Cryptography](#2024---explore-go-cryptography)
-    - [2024 - Practical guide for building a blockchain from scratch in Go with gRPC](#2024---practical-guide-for-building-a-blockchain-from-scratch-in-go-with-grpc-free)
-    - [2025 - Go at Scale: Patterns for Professional Development](#2025---go-at-scale-patterns-for-professional-development)
-    - [Go with the Domain: Building Modern Business Software in Go *Free*](#go-with-the-domain-building-modern-business-software-in-go-free)
-    - [Spaceship Go *Free*](#spaceship-go-free)
-    - [Ultimate Go Notebook](#ultimate-go-notebook)
-
-  - [Web Development](#web-development)
-    - [2020 - 12 Factor Applications with Docker and Go](#2020---12-factor-applications-with-docker-and-go)
-    - [2021 - Webapps in Go the anti textbook *Free*](#2021---webapps-in-go-the-anti-textbook-free)
-    - [2021 - Build SaaS apps in Go](#2021---build-saas-apps-in-go)
-    - [2021 - Go Brain Teasers](#2021---go-brain-teasers)
-    - [2021 - Creative DIY Microcontroller Projects with TinyGo and WebAssembly](#2021---creative-diy-microcontroller-projects-with-tinygo-and-webassembly)
-    - [2021 - Distributed Services with Go Your Guide to Reliable, Scalable, and Maintainable Systems](#2021---distributed-services-with-go-your-guide-to-reliable-scalable-and-maintainable-systems)
-    - [2021 - Build Systems with Go: Everything a Gopher Must Know](#2021---build-systems-with-go-everything-a-gopher-must-know)
-    - [2023 - Let's Go!](#2023---lets-go)
-    - [2023 - Let's Go Further](#2023---lets-go-further)
-    - [2024 - Mastering Go, 4rd edition](#2024---mastering-go-4rd-edition)
-    - [Web Development with Go: Learn to Create Real World Web Applications using Go](#web-development-with-go-learn-to-create-real-world-web-applications-using-go)
-    - [Wasm Cooking with Golang](#wasm-cooking-with-golang)
-    - [Generative Art in Go](#generative-art-in-go)
-    - [Building Web Apps with Go *Free*](#building-web-apps-with-go-free)
-    - [Build Web Application with Golang *Free*](#build-web-application-with-golang-free)
-  - [Resources](#resources)
-    - [A tour of Go](#a-tour-of-go)
-    - [Video: Learn Go Syntax in one video](#video-learn-go-syntax-in-one-video)
-    - [Tutorials: Go by Example](#tutorials-go-by-example)
-    - [Go Fundamentals Video Training](#go-fundamentals-video-training)
-    - [More Books on the Go Wiki](#more-books-on-the-go-wiki)
-    - [TutorialEdge.net Course](#tutorialedgenet-course)
-    - [Coursera Specialization: Programming with Go](#coursera-specialization-programming-with-go)
-    - [Course: Understand Go's In-Depth Mechanics](#course-understand-gos-in-depth-mechanics)
-    - [Course: Mastering Go Programming](#course-mastering-go-programming)
-    - [Course: Web Development with Google’s Go Programming Language](#course-web-development-with-googles-go-programming-language)
-    - [Golangbot.com Articles](#golangbotcom-articles)
-    - [Tuxerrante repo on go exercises](#tuxerrante-repo-on-go-exercises)
+- [Most Popular Golang Books](#most-popular-go-books)
+- [Starter Books](#starter-books)
+- [Advanced Books](#advanced-books)
+- [Web Development](#web-development) 
+- [Resources](#resources)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Most Popular Go Books
+
+> The most popular and highly recommended Go books based on community ratings, expert recommendations, and developer consensus across Amazon, Goodreads, and the Go community
+
+### [The Go Programming Language](https://amzn.to/3MbHW7i)
+
+<a href="https://amzn.to/3MbHW7i"><img src="gobooks/covers/gopl.book.png" width="120px"/></a>
+
+*Last published*: **2015**
+*Authors:* **Alan A. A. Donovan** and **Brian W. Kernighan**
+*Available as*: **eBook**, **Print**
+
+Widely considered the "Go Bible" and the definitive reference for the language, co-authored by Brian Kernighan of K&R C fame. With over 1,200 Amazon reviews and a 4.5-star rating, it appears on virtually every "best Go books" list. It covers syntax, data structures, concurrency, and best practices with hundreds of practical examples.
+
+-----
+
+### [Boring Go](https://golang.college/books/boring-go)
+
+*Last published*: **2026**
+*Authors:* **Dariush Abbasi**, **Hassan Aminfar**
+
+<a href="https://golang.college/books/boring-go"><img src="gobooks/covers/boring-go.png" width="120px"/></a>
+
+*Boring Go* is a practical guide to writing Go the way it works best in real projects—simple, explicit, and a little boring (in the good way). It champions clarity over novelty, readability over magic, and shows why boring code is often the most reliable, maintainable, and scalable choice.
+
+-----
+
+### [Learning Go: An Idiomatic Approach to Real-World Go Programming, 2nd Edition](https://amzn.to/4ceJWWQ)
+
+<a href="https://amzn.to/4ceJWWQ"><img src="gobooks/covers/learning-go.jpg" width="120px"/></a>
+
+*Last published*: **2024**
+*Authors:* **Jon Bodner**
+
+One of the most recommended modern Go books, praised by experts at Datadog and across the Go community. It teaches you to think like a Go developer by focusing on idiomatic patterns, design decisions, and generics. Consistently ranked at the top of best-of lists by BookAuthority, MentorCruise, GeeksforGeeks, and ReactDOM.
+
+-----
+
+### [100 Go Mistakes and How to Avoid Them](https://amzn.to/4p8eldS)
+
+<a href="https://amzn.to/4p8eldS"><img src="gobooks/covers/100-go-mistakes-and-how-to-avoid-them.png" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **Teiva Harsanyi**
+
+A community favorite for intermediate-to-advanced developers, frequently recommended on Reddit, Hacker News, and in Go learning paths like TutorialEdge. It provides a unique angle on Go mastery by highlighting common pitfalls in concurrency, testing, data structures, and more.
+
+-----
+
+### [Learn Go With Tests](https://quii.gitbook.io/learn-go-with-tests/) *Free*
+
+<a href="https://quii.gitbook.io/learn-go-with-tests/"><img src="gobooks/covers/learn-go-with-tests.png" width="120px"/></a>
+
+*Last published*: **2025**
+*Authors:* **Chris James**
+*Avaible For Free* : **[Source Code](https://github.com/quii/learn-go-with-tests)**
+
+One of the most popular free Go resources with over 22,000 GitHub stars. Its test-driven approach to learning Go has made it a go-to recommendation across the community. Frequently cited alongside paid books as essential reading for anyone learning Go.
+
+-----
+
+### [Writing An Interpreter In Go](https://amzn.to/45PIyGq)
+
+<a href="https://amzn.to/45PIyGq"><img src="gobooks/covers/writing-an-interpreter-in-go.png" width="120px"/></a>
+
+*Last published*: **2020**
+*Authors:* **Thorsten Ball**
+
+A cult classic with an enthusiastic following on Goodreads (4.5+ stars) and Hacker News. By guiding you through building a complete programming language interpreter from scratch, it teaches both Go and computer science fundamentals in a uniquely hands-on way.
+
+-----
+
+### [Let's Go!](https://lets-go.alexedwards.net/)
+
+<a href="https://lets-go.alexedwards.net/"><img src="gobooks/covers/lets-go.png" width="120px"/></a>
+
+*Last published*: **2023**
+*Authors:* **Alex Edwards**
+
+The most recommended book for Go web development, praised for its step-by-step, real-world approach to building secure and maintainable web applications. Frequently paired with its sequel *Let's Go Further* as the definitive Go web development learning path.
+
+-----
+
+### [Head First Go](https://amzn.to/4r1FJdA)
+
+<a href="https://amzn.to/4r1FJdA"><img src="gobooks/covers/head-first-go.jpg" width="120px"/></a>
+
+*Last published*: **2019**
+*Authors:* **Jay McGavren**
+
+A top pick on GeeksforGeeks and other beginner lists, leveraging the popular Head First visual learning format. Its intuitive graphical representations and humorous examples make it one of the most accessible entry points to Go for newcomers to programming.
+
+-----
+
+### [Black Hat Go](https://amzn.to/4tlEqaX)
+
+[<img src="gobooks/covers/black-hat-go.jpg" width="120px"/>](https://amzn.to/4tlEqaX)
+
+*Last published*: **2020**
+*Authors:* **Tom Steele, Chris Patten, Dan Kottmann**
+
+A highly popular niche book that combines Go with security and penetration testing. Widely recommended by both the Go and cybersecurity communities, it fills a unique gap by teaching offensive security tooling using Go's speed and concurrency strengths.
+
+-----
+
+### [Efficient Go: Data-Driven Performance Optimization](https://amzn.to/4ycxS0Q)
+
+<a href="https://amzn.to/4ycxS0Q"><img src="gobooks/covers/efficient-go.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **Bartlomiej Płotka, Frederic Branczyk**
+
+A highly regarded guide to Go performance, recommended by experts and frequently appearing on advanced Go reading lists. Written by engineers from the Prometheus and Thanos projects, it provides the tools and knowledge to make Go applications faster using fewer resources.
+
+-----
+
+### [Let's Go Further](https://lets-go-further.alexedwards.net/)
+
+<a href="https://lets-go-further.alexedwards.net/"><img src="gobooks/covers/lets-go-further.png" width="120px"/></a>
+
+*Last published*: **2023**
+*Authors:* **Alex Edwards**
+
+The highly popular sequel to *Let's Go!*, focusing on advanced API and web application patterns. Together with its predecessor, it forms the most recommended web development learning path in the Go community, covering everything from REST APIs to deployment.
+
+-----
 
 ## Starter Books
 
 > Here are the top recommended books for absolute beginners—those with little or no programming experience—who want to learn Go from the very start
 
 
-### [The Go Programming Language](https://amzn.to/3MbHW7i) 
+### [Boring Go](https://golang.college/books/boring-go)
 
-<a href="https://amzn.to/3MbHW7i"><img src="covers/gopl.book.png" width="120px"/></a>
+*Last published*: **2026**
+*Authors:* **Dariush Abbasi**, **Hassan Aminfar**
 
-*Last published*: **2015**
-*Authors:* **Alan A. A. Donovan** and **Brian W. Kernighan**
-*Available as*: **eBook**, **Print**
+<a href="https://golang.college/books/boring-go"><img src="gobooks/covers/boring-go.png" width="120px"/></a>
 
-
-Widely regarded as the definitive guide to Go programming, this book offers an in-depth exploration of the language's syntax, data structures, and unique features such as goroutines and channels. Key topics include concurrency, error handling, and best practices in software engineering. Whether you're a developer transitioning from another language or someone seeking to deepen your Go knowledge, this book is an invaluable resource for mastering both foundational and advanced concepts.
+*Boring Go* is a practical guide to writing Go the way it works best in real projects—simple, explicit, and a little boring (in the good way). It champions clarity over novelty, readability over magic, and shows why boring code is often the most reliable, maintainable, and scalable choice.
 
 -----
 
-### [Learning Go](https://www.miek.nl/go)
+### [Learn Go With Tests](https://quii.gitbook.io/learn-go-with-tests/)
 
-*Last published*: **2018**
-*Authors:* **Miek Gieben**
-*Avaible For Free* : **[Source Code](https://github.com/miekg/learninggo)**
+*Last published*: **2025**
+*Authors:* **Chris James**
+*Avaible For Free* : **[Source Code](https://github.com/quii/learn-go-with-tests)**
 
-<img src="cover/learning-go.png" width="120px"/>
+<a href="https://quii.gitbook.io/learn-go-with-tests/"><img src="gobooks/covers/learn-go-with-tests.png" width="120px"/></a>
 
-A online book to start learning Golang. It features numerous exercises (and answers).
-
-
------
-
-
-### [Get Programming with Go](https://amzn.to/4ts8ylm)
-
-*Last published*: **2018**
-*Authors:* **Nathan Youngman** and **Roger Peppé**
-
-<a href="https://amzn.to/4ts8ylm"><img src="covers/get-programming-with-go.png" width="120px"/></a>
-
-*Get Programming with Go* introduces you to the powerful Go language without confusing jargon or high-level theory. By working through 32 quick-fire lessons, you'll quickly pick up the basics of the innovative Go programming language!
+Learn Go guided by tests. Write a test, learn a new Go language feature to make it pass, refactor and repeat. You'll get a grounding in test-driven development and importantly understand the principles behind it.
 
 -----
 
+### [Learn Go with Pocket-Sized Projects](https://amzn.to/4cliBlM)
 
-### [API Foundations in Go](https://amzn.to/4tkfSPE)
+*Last published*: **2025**
+*Authors:* **Aliénor Latour**, **Donia Chaiehloudj**, and **Pascal Bertrand**
 
-*Last published*: **2019**
-*Authors:* **Tit Petric**
+<a href="https://amzn.to/4cliBlM"><img src="gobooks/covers/learn-go-with-pocket-sized-projects.jpg" width="120px"/></a>
 
-<a href="https://amzn.to/4tkfSPE"><img src="covers/api-foundations-in-go.jpeg" width="120px"/></a>
-
-With this book you'll learn to use Go, taking advantage of it's multi-threaded nature, and typed syntax. Starting your API implementation in Go is your first step towards what a rock solid API should be.
+Learn Go with Pocket-Sized Projects teaches you to write professional-level Go code by creating handy tools and fun apps. Each small, self-contained project introduces important practical skills, including ensuring that your code is thoroughly tested and documented! You'll make architectural decisions for your projects and organize your code in a maintainable way. Everything you learn is easy to scale-up to full-size Go applications.
 
 -----
 
+### [The Deeper Love of Go](https://bitfieldconsulting.com/books/deeper)
+
+*Last published*: **2025**
+*Authors:* **John Arundel**
+
+<a href="https://bitfieldconsulting.com/books/deeper"><img src="https://github.com/bitfield/love/blob/main/cover_small.png" width="120px"/></a>
+
+Introduces the Go programming language for complete beginners, as well as those with experience programming in other languages.
+
+-----
+
+### [Learning Go: An Idiomatic Approach to Real-World Go Programming, 2nd Edition](https://amzn.to/4ceJWWQ)
+
+*Last published*: **2024**
+*Authors:* **Jon Bodner**
+
+<a href="https://amzn.to/4ceJWWQ"><img src="gobooks/covers/learning-go.jpg" width="120px"/></a>
+
+Go has rapidly become the preferred language for building web services. Plenty of tutorials are available to teach Go's syntax to developers with experience in other programming languages, but tutorials aren't enough. They don't teach Go's idioms, so developers end up recreating patterns that don't make sense in a Go context. This practical guide provides the essential background you need to write clear and idiomatic Go.
+
+No matter your level of experience, you'll learn how to think like a Go developer. Author Jon Bodner introduces the design patterns experienced Go developers have adopted and explores the rationale for using them. This updated edition also shows you how Go's generics support fits into the language.
+
+This book helps you:
+
+- Write idiomatic code in Go and design a Go project
+- Understand the reasons behind Go's design decisions
+- Set up a Go development environment for a solo developer or team
+- Learn how and when to use reflection, unsafe, and cgo
+- Discover how Go's features allow the language to run efficiently
+- Know which Go features you should use sparingly or not at all
+- Use Go's tools to improve performance, optimize memory usage, and reduce garbage collection
+- Learn how to use Go's advanced development tools
+
+-----
+
+### [Go Programming - From Beginner to Professional, 2nd Edition](https://amzn.to/4agrPgG)
+
+*Last published*: **2024**
+*Authors:* **Samantha Coyle**
+
+<a href="https://amzn.to/4agrPgG"><img src="gobooks/covers/go-programming-from-beginner-to-professional.jpg" width="120px"/></a>
+
+Go Programming – From Beginner to Professional is a comprehensive guide that takes your proficiency in the Go programming language from novice to expert. Starting with fundamental concepts, this book covers variables, command-line tools, and working with data before delving into advanced concepts, including error handling, interfaces, and generics, harnessing Go's latest features through hands-on exercises. Along the way, you'll learn to structure projects using Go modules, manage packages effectively, and master debugging techniques. As you progress, you'll get to grips with practical application-centric aspects such as command-line programming, file manipulation, and working with SQL databases. Additionally, the book explores web server development, RESTful APIs, and utilizing the Go HTTP client to interact with web applications. Further enhancing your Go skills, you'll learn concurrent programming, testing methodologies, Go tools, and how to deploy applications in the cloud. Throughout the book, you'll uncover Go's hidden gems and gain insights into time manipulation, best practices, and more. By the end of this book, you'll have worked through practical exercises and activities that'll equip you with the knowledge and skills needed to excel as a proficient Go developer, primed for success in real-world projects.
+
+What you will learn
+- Understand the Go syntax and apply it proficiently to handle data and write functions
+- Debug your Go code to troubleshoot development problems
+- Safely handle errors and recover from panics
+- Implement polymorphism using interfaces and gain insight into generics
+- Work with files and connect to popular external databases
+- Create an HTTP client and server and work with a RESTful web API
+- Use concurrency to design efficient software
+- Use Go tools to simplify development and improve your code
+
+-----
+
+### [Go 101](https://go101.org/article/101.html)
+
+*Last published*: **2023**
+*Authors:* **Tapir Liu**
+*Avaible For Free* : **[Read Online](https://go101.org/article/101.html)**
+
+
+<a href="https://go101.org/article/101.html"><img src="gobooks/covers/go-101.jpg" width="120px"/></a>
+
+Go 101 is a book focusing on Go syntax/semantics and all kinds of runtime related things (Go 1.17-pre ready) and tries to help gophers gain a deep and thorough understanding of Go. This book also collects many details of Go and in Go programming. It is expected that this book is helpful for both beginner and experienced Go programmers.
+
+-----
+
+### [gRPC Go for Professionals](https://amzn.to/46oiZfC)
+
+*Last published*: **2023**
+*Authors:* **Clement Jean**
+
+<a href="https://amzn.to/46oiZfC"><img src="gobooks/covers/grpc-go-for-professionals.jpg" width="120px"/></a>
+
+
+In recent years, Microservice architecture has been gaining popularity. With that rise, comes a different set of requirements than we had previously. The most important one is efficient communication between the different services. That's where gRPC comes in. So naturally, this book will show you how to create gRPC servers and clients in an efficient, secure, and scalable way. But, on top of that, because Microservices are not only about communication, this book intends to show you how to deploy your application on Kubernetes and configure other tools that are needed for making your application more resilient. In that way, this book will give you all the tools that you need to start right away with gRPC in a Microservice architecture.
+
+In gRPC Go for Professionals, you'll begin by learning the core concepts such as how the framework sends messages over the network and why it uses Protobuf for serialization and deserialization. After that, we will implement a TODO list API step by step to see the different features of gRPC. Then we are going to see how to test your services in different ways. We will see how to debug your API endpoints. And finally, we will see how to deploy the application's services by creating Docker images and using Kubernetes.
+
+-----
+
+### [Go Faster](https://leanpub.com/gofaster)
+
+*Last published*: **2023**
+*Authors:* **Ollie Phillips**
+
+
+<a href="https://leanpub.com/gofaster"><img src="gobooks/covers/go-faster.png" alt="Picture of book cover for Go Faster" width="120px"/></a>
+
+Some say Go is a simple language and with only 25 keywords it surely is. But, to work with Go effectively requires proficiency and understanding beyond simple syntax alone. It can take developers months or even years to acquire this experience, but this book sets out to short-circuit that process and get you there faster!
+
+With my book, Go Faster, you can shorten your learning curve and become a proficient Go programmer, going from beginner to expert in no time. Learn Go faster and join the thriving community of skilled Go developers!
+
+-----
+
+### [Shipping Go](https://amzn.to/4ra6o8q)
+
+*Last published*: **2023**
+*Authors:* **Joel Holmes**
+
+
+<a href="https://amzn.to/4ra6o8q"><img src="gobooks/covers/shipping-go.jpg" alt="Picture of book cover for Shipping Go" width="120px"/></a>
+
+You know how to build Go programs—now learn how to ship them to your customers efficiently! This practical guide to continuous delivery shows you how to rapidly establish an automated pipeline that will improve your testing, code quality, and final product.
+
+In Shipping Go you will learn how to:
+ - Develop better software based on feedback from customers
+ - Create a development pipeline that turns feedback into features
+ - Reduce bugs with pipeline automation that validates code before it is deployed
+ - Establish continuous testing for exceptional code quality
+ - Serverless, container based, and server based deployments
+ - Scale your deployment in a cost-effective way
+ - Deliver a culture of continuous improvement
+
+ -----
+
+### [gRPC Microservices in Go](https://amzn.to/4rzgHSW)
+
+*Last published*: **2023**
+*Authors:* **Hüseyin Babal**
+
+<a href="https://amzn.to/4rzgHSW"><img src="gobooks/covers/grpc-microservices-in-go.jpg" width="120px"/></a>
+
+For the last decade, we have heard stories about Monolith to Microservice transitions and we might think that this transition solves the majority of the problems in the organizations. However, it might end up with mess if you are not aware about best practices of this transition, since Microservice Architecture comes with its challenges. In this book, we start covering production grade best practices of Microservices Architecture and explain when to use it. Then we talk about microservice communication patterns where gRPC comes to the stage. You will see complete examples written in Go with Hexagonal Architecture applied to project structure. You will not only learn how to implement microservices, you will see how to write tests, maintain quality with proper CI, deploy to Kubernetes environment and finally set up an observable system to have better monitoring for your application.
+
+-----
 
 ### [Go for Javascript Developers](https://www.pazams.com/Go-for-Javascript-Developers/)
 
@@ -160,44 +316,9 @@ With this book you'll learn to use Go, taking advantage of it's multi-threaded n
 *Authors:* **Maor Zamski** and **Daniel Singer**
 *Avaible For Free* : **[Source Code](https://github.com/pazams/go-for-javascript-developers)**
 
-<img src="covers/go-for-javascript-developers.png" width="120px"/>
+<a href="https://www.pazams.com/Go-for-Javascript-Developers/"><img src="gobooks/covers/go-for-javascript-developers.png" width="120px"/></a>
 
 This book helps Javascripters become Gophers. Outlining the differences between these languages makes it easier to switch back and forth, and can help mitigate potential issues when doing so.
-
------
-
-### [The Go Workshop](https://amzn.to/3MrFZUk)
-
-*Last published*: **2019**
-*Authors:* **Delio D'Anna**, **Andrew Hayes**, **Sam Hennessy**, **Jeremy Leasor**, **Gobin Sougrakpam**, and **Dániel Szabó**
-
-<a href="https://amzn.to/3MrFZUk"><img src="covers/the-go-workshop.avif" width="120px"/></a>
-
-The Go Workshop will take the pain out of learning the Go programming language (also known as Golang). It is designed to teach you to be productive in building real-world software. Presented in an engaging, hands-on way, this book focuses on the features of Go that are used by professionals in their everyday work.
-
------
-
-### [Head First Go](https://amzn.to/4r1FJdA)
-
-*Last published*: **2019**
-*Authors:* **Jay McGavren**
-
-<a href="https://amzn.to/4r1FJdA"><img src="covers/head-first-go.jpg" width="120px"/></a>
-
-Go makes it easy to build software that’s simple, reliable, and efficient. Andthis book makes it easy for programmers like you to get started. Google designed Go for high-performance networking and multiprocessing, but—like Python and JavaScript—the language is easy to read and use. With this practical hands-on guide, you’ll learn how to write Go code using clear examples that demonstrate the language in action. Best of all, you’ll understand the conventions and techniques that employers want entry-level Go developers to know.
-
-
------
-
-
-### [How to Code in Go](https://www.digitalocean.com/community/books/how-to-code-in-go-ebook)
-
-*Last published*: **2020**
-*Authors:* **Mark Bates**, **Cory LaNou** and **Tim Raymond**
-*Avaible For Free* : **[epub](https://assets.digitalocean.com/books/how-to-code-in-go.epub)**, **[pdf](https://assets.digitalocean.com/books/how-to-code-in-go.pdf)**
-
-
-This book is designed to introduce you to writing programs with the Go programming language. You’ll learn how to write useful tools and applications that can run on remote servers, or local Windows, macOS, and Linux systems for development. 
 
 -----
 
@@ -206,7 +327,7 @@ This book is designed to introduce you to writing programs with the Go programmi
 *Last published*: **2022**
 *Authors:* **Chris Noring**
 
-<img src="covers/go-from-the-beginning.png" width="120px">
+<a href="https://leanpub.com/go-from-the-beginning"><img src="gobooks/covers/go-from-the-beginning.png" width="120px"/></a>
 
 In this book you will learn the following:
 
@@ -227,7 +348,7 @@ In this book you will learn the following:
 *Avaible For Free* : **[Read Online](https://www.practical-go-lessons.com)**
 
 
-<img src="covers/practical-go-lessons.png" width="120px"/>
+<a href="https://www.practical-go-lessons.com/"><img src="gobooks/covers/practical-go-lessons.png" width="120px"/></a>
 
 Practical Go Lessons has 41 chapters and more than 700 pages with illustrations.
 It is suitable for anybody how wants to start programming with the Go language.
@@ -242,7 +363,7 @@ The HTML version is free. You can support the author by buying the PDF or Paper 
 *Last published*: **2022**
 *Authors:* **Adam Freeman**
 
-<img src="covers/pro-go.jpeg" width="120px"/>
+<a href="https://amzn.to/4rDm43L"><img src="gobooks/covers/pro-go.jpeg" width="120px"/></a>
 
 Starting from the basics and building up to the most advanced and sophisticated features. You will learn how Go builds on a simple and consistent type system to create a comprehensive and productive development experience that produces fast and robust applications that run across platforms.
 
@@ -258,7 +379,7 @@ Starting from the basics and building up to the most advanced and sophisticated 
 *Last published*: **2022**
 *Authors:* **John Doak**, **David Justice**
 
-<img src="covers/go-for-devops.jpg" width="120px"/>
+<a href="https://amzn.to/3LZBwrT"><img src="gobooks/covers/go-for-devops.jpg" width="120px"/></a>
 
 Go is the go-to language for DevOps libraries and services, and without it, achieving fast and safe automation is a challenge. With the help of Go for DevOps, you'll learn how to deliver services with ease and safety, becoming a better DevOps engineer in the process.
 
@@ -268,291 +389,332 @@ By the end of this Go for DevOps book, you'll understand how to apply developmen
 
 -----
 
-### [Learn Go With Tests](https://quii.gitbook.io/learn-go-with-tests/)
+### [How to Code in Go](https://www.digitalocean.com/community/books/how-to-code-in-go-ebook)
 
-*Last published*: **2025**
-*Authors:* **Chris James**
-*Avaible For Free* : **[Source Code](https://github.com/quii/learn-go-with-tests)**
-
-<img src="covers/learn-go-with-tests.png" width="120px"/>
-
-Learn Go guided by tests. Write a test, learn a new Go language feature to make it pass, refactor and repeat. You'll get a grounding in test-driven development and importantly understand the principles behind it.
-
------
-
-###[Go 101](https://go101.org/article/101.html)
-
-*Last published*: **2023**
-*Authors:* **Tapir Liu**
-*Avaible For Free* : **[Read Online](https://go101.org/article/101.html)**
+*Last published*: **2020**
+*Authors:* **Mark Bates**, **Cory LaNou** and **Tim Raymond**
+*Avaible For Free* : **[epub](https://assets.digitalocean.com/books/how-to-code-in-go.epub)**, **[pdf](https://assets.digitalocean.com/books/how-to-code-in-go.pdf)**
 
 
-<img src="covers/go-101.jpg" width="120px"/>
-
-Go 101 is a book focusing on Go syntax/semantics and all kinds of runtime related things (Go 1.17-pre ready) and tries to help gophers gain a deep and thorough understanding of Go. This book also collects many details of Go and in Go programming. It is expected that this book is helpful for both beginner and experienced Go programmers.
+This book is designed to introduce you to writing programs with the Go programming language. You'll learn how to write useful tools and applications that can run on remote servers, or local Windows, macOS, and Linux systems for development.
 
 -----
 
-### [Go Programming Language](https://book.gofarsi.ir/)
+### [API Foundations in Go](https://amzn.to/4tkfSPE)
 
-*Last published*: **2023**
-*Authors:* **Tapir Liu**
-*Avaible For Free* : **[Read Online](https://book.gofarsi.ir)**
-*Language*: **Persian**
+*Last published*: **2019**
+*Authors:* **Tit Petric**
 
-<img src="covers/gofarsi-book-cover.jpg" width="120px"/>
+<a href="https://amzn.to/4tkfSPE"><img src="gobooks/covers/api-foundations-in-go.jpeg" width="120px"/></a>
 
-The first Persian open source book about golang deep dive.
-In this book, we discuss all deep topics related to the Go language,
-from the basics to the advanced, with the aim of increasing the Gopher community in Iran.
+With this book you'll learn to use Go, taking advantage of it's multi-threaded nature, and typed syntax. Starting your API implementation in Go is your first step towards what a rock solid API should be.
 
 -----
 
-### [gRPC Go for Professionals](https://amzn.to/46oiZfC)
+### [The Go Workshop](https://amzn.to/3MrFZUk)
 
-*Last published*: **2023**
-*Authors:* **Clement Jean**
+*Last published*: **2019**
+*Authors:* **Delio D'Anna**, **Andrew Hayes**, **Sam Hennessy**, **Jeremy Leasor**, **Gobin Sougrakpam**, and **Dániel Szabó**
 
-<img src="covers/grpc-go-for-professionals.jpg" width="120px"/>
+<a href="https://amzn.to/3MrFZUk"><img src="gobooks/covers/the-go-workshop.avif" width="120px"/></a>
 
-
-In recent years, Microservice architecture has been gaining popularity. With that rise, comes a different set of requirements than we had previously. The most important one is efficient communication between the different services. That's where gRPC comes in. So naturally, this book will show you how to create gRPC servers and clients in an efficient, secure, and scalable way. But, on top of that, because Microservices are not only about communication, this book intends to show you how to deploy your application on Kubernetes and configure other tools that are needed for making your application more resilient. In that way, this book will give you all the tools that you need to start right away with gRPC in a Microservice architecture.
-
-In gRPC Go for Professionals, you'll begin by learning the core concepts such as how the framework sends messages over the network and why it uses Protobuf for serialization and deserialization. After that, we will implement a TODO list API step by step to see the different features of gRPC. Then we are going to see how to test your services in different ways. We will see how to debug your API endpoints. And finally, we will see how to deploy the application's services by creating Docker images and using Kubernetes.
+The Go Workshop will take the pain out of learning the Go programming language (also known as Golang). It is designed to teach you to be productive in building real-world software. Presented in an engaging, hands-on way, this book focuses on the features of Go that are used by professionals in their everyday work.
 
 -----
 
-### [Learn Go with Pocket-Sized Projects](https://amzn.to/4cliBlM)
+### [Head First Go](https://amzn.to/4r1FJdA)
 
-*Last published*: **2025**
-*Authors:* **Aliénor Latour**, **Donia Chaiehloudj**, and **Pascal Bertrand**
+*Last published*: **2019**
+*Authors:* **Jay McGavren**
 
-<img src="covers/learn-go-with-pocket-sized-projects.jpg" width="120px"/>
+<a href="https://amzn.to/4r1FJdA"><img src="gobooks/covers/head-first-go.jpg" width="120px"/></a>
 
-Learn Go with Pocket-Sized Projects teaches you to write professional-level Go code by creating handy tools and fun apps. Each small, self-contained project introduces important practical skills, including ensuring that your code is thoroughly tested and documented! You’ll make architectural decisions for your projects and organize your code in a maintainable way. Everything you learn is easy to scale-up to full-size Go applications.
-
------
-
-### [Go Faster](https://leanpub.com/gofaster)
-
-*Last published*: **2023**
-*Authors:* **Ollie Phillips**
-
-
-<img src="covers/go-faster.png" alt="Picture of book cover for Go Faster" width="120px"/>
-
-Some say Go is a simple language and with only 25 keywords it surely is. But, to work with Go effectively requires proficiency and understanding beyond simple syntax alone. It can take developers months or even years to acquire this experience, but this book sets out to short-circuit that process and get you there faster!
-
-With my book, Go Faster, you can shorten your learning curve and become a proficient Go programmer, going from beginner to expert in no time. Learn Go faster and join the thriving community of skilled Go developers!
+Go makes it easy to build software that's simple, reliable, and efficient. Andthis book makes it easy for programmers like you to get started. Google designed Go for high-performance networking and multiprocessing, but—like Python and JavaScript—the language is easy to read and use. With this practical hands-on guide, you'll learn how to write Go code using clear examples that demonstrate the language in action. Best of all, you'll understand the conventions and techniques that employers want entry-level Go developers to know.
 
 -----
 
-### [Shipping Go](https://amzn.to/4ra6o8q)
+### [Learning Go](https://www.miek.nl/go)
 
-*Last published*: **2023**
-*Authors:* **Joel Holmes**
+*Last published*: **2018**
+*Authors:* **Miek Gieben**
+*Avaible For Free* : **[Source Code](https://github.com/miekg/learninggo)**
 
 
-<img src="covers/efficient-go.jpg" alt="Picture of book cover for Shipping Go" width="120px"/>
-
-You know how to build Go programs—now learn how to ship them to your customers efficiently! This practical guide to continuous delivery shows you how to rapidly establish an automated pipeline that will improve your testing, code quality, and final product.
-
-In Shipping Go you will learn how to:
- - Develop better software based on feedback from customers
- - Create a development pipeline that turns feedback into features
- - Reduce bugs with pipeline automation that validates code before it is deployed
- - Establish continuous testing for exceptional code quality
- - Serverless, container based, and server based deployments
- - Scale your deployment in a cost-effective way
- - Deliver a culture of continuous improvement
-
- -----
-
-### [gRPC Microservices in Go](https://amzn.to/4rzgHSW)
-
-*Last published*: **2023**
-*Authors:* **Hüseyin Babal**
-
-<img src="covers/grpc-microservices-in-go.jpg" width="120px"/>
-
-For the last decade, we have heard stories about Monolith to Microservice transitions and we might think that this transition solves the majority of the problems in the organizations. However, it might end up with mess if you are not aware about best practices of this transition, since Microservice Architecture comes with its challenges. In this book, we start covering production grade best practices of Microservices Architecture and explain when to use it. Then we talk about microservice communication patterns where gRPC comes to the stage. You will see complete examples written in Go with Hexagonal Architecture applied to project structure. You will not only learn how to implement microservices, you will see how to write tests, maintain quality with proper CI, deploy to Kubernetes environment and finally set up an observable system to have better monitoring for your application.
+A online book to start learning Golang. It features numerous exercises (and answers).
 
 -----
 
-### [Learning Go: An Idiomatic Approach to Real-World Go Programming, 2nd Edition](hhttps://amzn.to/4ceJWWQ)
+### [Get Programming with Go](https://amzn.to/4ts8ylm)
 
-*Last published*: **2024**
-*Authors:* **Jon Bodner**
+*Last published*: **2018**
+*Authors:* **Nathan Youngman** and **Roger Peppé**
 
-<img src="covers/learning-go.jpg" width="120px"/>
+<a href="https://amzn.to/4ts8ylm"><img src="gobooks/covers/get-programming-with-go.png" width="120px"/></a>
 
-Go has rapidly become the preferred language for building web services. Plenty of tutorials are available to teach Go's syntax to developers with experience in other programming languages, but tutorials aren't enough. They don't teach Go's idioms, so developers end up recreating patterns that don't make sense in a Go context. This practical guide provides the essential background you need to write clear and idiomatic Go.
-
-No matter your level of experience, you'll learn how to think like a Go developer. Author Jon Bodner introduces the design patterns experienced Go developers have adopted and explores the rationale for using them. This updated edition also shows you how Go's generics support fits into the language.
-
-This book helps you:
-
-- Write idiomatic code in Go and design a Go project
-- Understand the reasons behind Go's design decisions
-- Set up a Go development environment for a solo developer or team
-- Learn how and when to use reflection, unsafe, and cgo
-- Discover how Go's features allow the language to run efficiently
-- Know which Go features you should use sparingly or not at all
-- Use Go's tools to improve performance, optimize memory usage, and reduce garbage collection
-- Learn how to use Go's advanced development tools
+*Get Programming with Go* introduces you to the powerful Go language without confusing jargon or high-level theory. By working through 32 quick-fire lessons, you'll quickly pick up the basics of the innovative Go programming language!
 
 -----
 
-### 2024 - [Go Programming - From Beginner to Professional, 2nd Edition](https://amzn.to/4agrPgG)
+### [The Go Programming Language](https://amzn.to/3MbHW7i) 
 
-*Last published*: **2024**
-*Authors:* **Samantha Coyle**
+<a href="https://amzn.to/3MbHW7i"><img src="gobooks/covers/gopl.book.png" width="120px"/></a>
 
-<img src="covers/go-programming-from-beginner-to-professional.jpg" width="120px"/>
+*Last published*: **2015**
+*Authors:* **Alan A. A. Donovan** and **Brian W. Kernighan**
+*Available as*: **eBook**, **Print**
 
-Go Programming – From Beginner to Professional is a comprehensive guide that takes your proficiency in the Go programming language from novice to expert. Starting with fundamental concepts, this book covers variables, command-line tools, and working with data before delving into advanced concepts, including error handling, interfaces, and generics, harnessing Go’s latest features through hands-on exercises. Along the way, you’ll learn to structure projects using Go modules, manage packages effectively, and master debugging techniques. As you progress, you’ll get to grips with practical application-centric aspects such as command-line programming, file manipulation, and working with SQL databases. Additionally, the book explores web server development, RESTful APIs, and utilizing the Go HTTP client to interact with web applications. Further enhancing your Go skills, you’ll learn concurrent programming, testing methodologies, Go tools, and how to deploy applications in the cloud. Throughout the book, you’ll uncover Go’s hidden gems and gain insights into time manipulation, best practices, and more. By the end of this book, you’ll have worked through practical exercises and activities that’ll equip you with the knowledge and skills needed to excel as a proficient Go developer, primed for success in real-world projects.
 
-What you will learn
-- Understand the Go syntax and apply it proficiently to handle data and write functions
-- Debug your Go code to troubleshoot development problems
-- Safely handle errors and recover from panics
-- Implement polymorphism using interfaces and gain insight into generics
-- Work with files and connect to popular external databases
-- Create an HTTP client and server and work with a RESTful web API
-- Use concurrency to design efficient software
-- Use Go tools to simplify development and improve your code
+Widely regarded as the definitive guide to Go programming, this book offers an in-depth exploration of the language's syntax, data structures, and unique features such as goroutines and channels. Key topics include concurrency, error handling, and best practices in software engineering. Whether you're a developer transitioning from another language or someone seeking to deepen your Go knowledge, this book is an invaluable resource for mastering both foundational and advanced concepts.
 
 -----
 
-### [The Deeper Love of Go](https://bitfieldconsulting.com/books/deeper)
-
-*Last published*: **2025**
-*Authors:* **John Arundel**
-
-<img src="https://github.com/bitfield/love/blob/main/cover_small.png" width="120px"/>
-
-Introduces the Go programming language for complete beginners, as well as those with experience programming in other languages.
-
------
 
 ## Advanced Books
 
-### 2018 - [Hands-On Dependency Injection in Go](https://amzn.to/2Q6dLQC)
+### [Go at Scale: Patterns for Professional Development](https://amzn.to/4wDN5Xn)
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/51%2B8EdihuKL._SX404_BO1,204,203,200_.jpg" width="120px"/>
+<a href="https://amzn.to/4wDN5Xn"><img src="gobooks/covers/go-at-scale.jpg" width="120px"/></a>
 
-Hands-On Dependency Injection in Go takes you on a journey, teaching you about refactoring existing code to adopt dependency injection (DI) using various methods available in Go.
+*Last published*: **2025**
+*Authors:* ****
 
-Of the six methods introduced in this book, some are conventional, such as constructor or method injection, and some unconventional, such as just-in-time or config injection. Each method is explained in detail, focusing on their strengths and weaknesses, and is followed with a step-by-step example of how to apply it. With plenty of examples, you will learn how to leverage DI to transform code into something simple and flexible.
-
-Hands-On Dependency Injection in Go takes a pragmatic approach and focuses heavily on the code, user experience, and how to achieve long-term benefits through incremental changes.
-
------
-
-### 2018 - [Security with Go](https://www.packtpub.com/product/security-with-go/9781788627917)
-
-<img src="https://static.packt-cdn.com/products/9781788627917/cover/smaller" width="120px"/>
-
-Security with Go is the first Golang security book, and it is useful for both blue team and red team applications. With this book, you will learn how to write secure software, monitor your systems, secure your data, attack systems, and extract information.
-
-Defensive topics include cryptography, forensics, packet capturing, and building secure web applications.
-
-Offensive topics include brute force, port scanning, packet injection, web scraping, social engineering, and post exploitation techniques.
+Go at Scale is your comprehensive guide to writing scalable, maintainable, and efficient Go code. Moving beyond the basics, this book dives deep into advanced patterns and practices used in real-world applications.
 
 -----
 
-### 2019 - [A Go Developer's Notebook](https://leanpub.com/GoNotebook/)
+### [The Power of Go: Tools](https://bitfieldconsulting.com/books/tools)
 
-<img src="https://s3.amazonaws.com/titlepages.leanpub.com/GoNotebook/large?1425551366"  width="120px"/>
+<a href="https://bitfieldconsulting.com/books/tools"><img src="gobooks/covers/the-power-of-go-tools.png" width="120px"/></a>
 
-A developer's experience in golang.
+*Last published*: **2024**
+*Authors:* **John Arundel**
 
------
+Go is a popular choice for writing DevOps and systems programs, and command-line tools in particular. How can we write simple, powerful, idiomatic, and even beautiful tools in Go? This book covers all the necessary techniques: functional options, flags and arguments, files and filesystems, executing commands, writing shells and pipelines, JSON and YAML wrangling, and even sophisticated API clients.
 
-### 2020 - [Black Hat Go](https://www.nostarch.com/blackhatgo)
-
-[<img src="https://nostarch.com/sites/default/files/styles/uc_product/public/BHG_frontcover_REV_HM.png?itok=ns0fk-16" width="120px"/>](https://www.nostarch.com/blackhatgo)
-
-In Black Hat Go, you'll learn how to write powerful and effective penetration testing tools in Go, a language revered for its speed and scalability. Start off with an introduction to Go fundamentals like data types, control structures, and error handling; then, dive into the deep end of Go’s offensive capabilities.
+Even more importantly, the book teaches you how to _think_ like a master software engineer: how to break down problems into manageable chunks, how to test functions before they're written, and how to design Go CLIs that delight users.
 
 -----
 
-### 2020 - [Writing An Interpreter In Go](https://interpreterbook.com/)
-<img src="https://interpreterbook.com/img/cover-cb2da3d1.png" width="120px"/>
+### [Build an Orchestrator in Go](https://amzn.to/4bjptyT)
 
-In this book we will create a programming language together.
+<a href="https://amzn.to/4bjptyT"><img src="gobooks/covers/build-an-orchestrator-in-go.png" width="120px"/></a>
 
-We'll start with 0 lines of code and end up with a fully working interpreter for the Monkey* programming language.
+*Last published*: **2024**
+*Authors:* **Tim Boring**
 
-Step by step. From tokens to output. All code shown and included. Fully tested.
+Understand Kubernetes and other orchestration systems deeply by building your own using Go and the Docker API.
 
------
-
-### 2020 - [Writing A Compiler In Go](https://compilerbook.com/)
-
-<img src="https://compilerbook.com/images/cover-514e0936.png" width="120px"/>
-
-This is the sequel to Writing An Interpreter In Go.
-
-We're picking up right where we left off and write a compiler and a virtual machine for Monkey.
-
-Runnable and tested code front and center, built from the ground up, step by step — just like before.
-
-But this time, we're going to define bytecode, compile Monkey and execute it in our very own virtual machine.
-
-It's the next step in Monkey's evolution.
+Orchestration systems like Kubernetes coordinate other software subsystems and services to create a complete organized system. Although orchestration tools have a reputation for complexity, they're designed around few important patterns that apply across many aspects of software development. Build an Orchestrator in Go reveals the inner workings of orchestration frameworks by guiding you as you design and implement your own using the Go SDK. As you create your own orchestration framework, you'll improve your understanding of Kubernetes and its role in distributed system design. You'll also build the skills required to design custom orchestration solutions for those times when an out-of-the-box solution isn't a good fit.
 
 -----
 
-### 2020 - [Hands-On Software Engineering with Golang](https://www.packtpub.com/gb/programming/hands-on-software-engineering-with-golang)
+### [Explore Go: Cryptography](https://bitfieldconsulting.com/books/crypto)
 
-<img src="https://static.packt-cdn.com/products/9781838554491/cover/smaller" width="120px"/>
+<a href="https://bitfieldconsulting.com/books/crypto"><img src="gobooks/covers/explore-go-cryptography.png" width="120px"/></a>
 
-This Golang book distills industry best practices for writing lean Go code that is easy to test and maintain, and helps you to explore its practical implementation by creating a multi-tier application called Links ‘R’ Us from scratch. You’ll be guided through all the steps involved in designing, implementing, testing, deploying, and scaling an application. Starting with a monolithic architecture, you’ll iteratively transform the project into a service-oriented architecture (SOA) that supports the efficient out-of-core processing of large link graphs.
+*Last published*: **2024**
+*Authors:* **John Arundel**
 
-You’ll learn about various cutting-edge and advanced software engineering techniques such as building extensible data processing pipelines, designing APIs using gRPC, and running distributed graph processing algorithms at scale.  Finally, you’ll learn how to compile and package your Go services using Docker and automate their deployment to a Kubernetes cluster.
+Much of the modern world is built on cryptography, and this book introduces readers to the fundamental principles of ciphers, keys, and hashing. It traces the development of increasingly sophisticated cryptographic schemes from the Caesar cipher to SHA-256 and AES-GCM, including dozens of example Go programs and coding challenges. The book concludes with a review of best practices for handling encryption and authentication in Go applications.
 
 -----
 
-### 2021 - [Building Distributed Applications in Gin](https://www.packtpub.com/product/building-distributed-applications-in-gin/9781801074858)
+### [Practical guide for building a blockchain from scratch in Go with gRPC](https://github.com/volodymyrprokopyuk/go-blockchain) *Free*
 
-<img src="https://static.packt-cdn.com/products/9781801074858/cover/smaller" width="120px"/>
+*Last published*: **2024**
+*Authors:* ****
+
+A foundational and practical guide for effectively learning the fundamental blockchain concepts and
+progressively building a blockchain from scratch in Go with gRPC. An interesting and challenging
+adventure that takes you from the foundational concepts and purpose through the technical design and
+implementation to the practical testing and usage of the proposed blockchain. Simple, yet non-trivial. Concise, yet detailed. Practical, yet well-grounded.
+
+-----
+
+### [Go programming language secure coding practices guide](https://checkmarx.gitbooks.io/go-scp/) *Free*
+
+*Last published*: **2023**
+*Authors:* ****
+
+The main goal of this book is to help developers avoid common mistakes while at the same time, learning a new programming language through a "hands-on approach". This book provides a good level of detail on "how to do it securely" showing what kind of security problems could arise during development.
+
+-----
+
+### [Network Automation with Go](https://amzn.to/4pd0mDM)
+
+<a href="https://amzn.to/4pd0mDM"><img src="gobooks/covers/network-automation-with-go.jpg" width="120px"/></a>
+
+*Last published*: **2023**
+*Authors:* ****
+
+Go's built-in first-class concurrency mechanisms make it an ideal choice for long-lived low-bandwidth I/O operations, which are typical requirements of network automation and network operations applications. This book provides a quick overview of Go and hands-on examples within it to help you become proficient with Go for network automation. It's a practical guide that will teach you how to automate common network operations and build systems using Go. The first part takes you through a general overview, use cases, strengths, and inherent weaknesses of Go to prepare you for a deeper dive into network automation. You'll explore the common network automation areas and challenges, what language features you can use in each of those areas, and the common software tools and packages. To help deepen your understanding, you'll also work through real-world network automation problems and apply hands-on solutions to them. By the end of this book, you'll be well-versed with Go and have a solid grasp on network automation.
+
+-----
+
+### [Microservices with Go](https://amzn.to/4f6I2aH)
+<a href="https://amzn.to/4f6I2aH"><img src="gobooks/covers/microservices-with-go.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* ****
+
+This book covers the key benefits and common issues of microservices, helping you understand the problems microservice architecture helps to solve, the issues it usually introduces, and the ways to tackle them.
+
+You'll start by learning about the importance of using the right principles and standards in order to achieve the key benefits of microservice architecture. The following chapters will explain why the Go programming language is one of the most popular languages for microservice development and lay down the foundations for the next chapters of the book. You'll explore the foundational aspects of Go microservice development including service scaffolding, service discovery, data serialization, synchronous and asynchronous communication, deployment, and testing. After covering the development aspects, you'll progress to maintenance and reliability topics. The last part focuses on more advanced topics of Go microservice development including system reliability, observability, maintainability, and scalability. In this part, you'll dive into the best practices and examples which illustrate how to apply the key ideas to existing applications, using the services scaffolded in the previous part as examples.
+
+By the end of this book, you'll have gained hands-on experience with everything you need to develop scalable, reliable and performant microservices using Go.
+
+-----
+
+### [Event-Driven Architecture in Golang](https://amzn.to/4h4aVqw)
+
+<a href="https://amzn.to/4h4aVqw"><img src="gobooks/covers/event-driven-architecture-in-golang.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* ****
+
+Event-driven architecture in Golang is an approach used to develop applications that shares state changes asynchronously, internally, and externally using messages. EDA applications are better suited at handling situations that need to scale up quickly and the chances of individual component failures are less likely to bring your system crashing down. This is why EDA is a great thing to learn and this book is designed to get you started with the help of step-by-step explanations of essential concepts, practical examples, and more.
+
+You'll begin building event-driven microservices, including patterns to handle data consistency and resiliency. Not only will you learn the patterns behind event-driven microservices but also how to communicate using asynchronous messaging with event streams. You'll then build an application made of several microservices that communicates using both choreographed and orchestrated messaging.
+
+By the end of this book, you'll be able to build and deploy your own event-driven microservices using asynchronous communication.
+
+-----
+
+### [Efficient Go: Data-Driven Performance Optimization](https://amzn.to/4ycxS0Q)
+
+<a href="https://amzn.to/4ycxS0Q"><img src="gobooks/covers/efficient-go.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **Bartlomiej Płotka, Frederic Branczyk**
+
+Software engineers today typically put performance optimizations low on the list of development priorities. But despite significant technological advancements and lower-priced hardware, software efficiency still matters. With this book, Go programmers will learn how to approach performance topics for applications written in this open source language.
+
+How and when should you apply performance efficiency optimization without wasting your time? Authors Bartlomiej Plotka and Frederic Branczyk provide the tools and knowledge you need to make your system faster using fewer resources. Once you learn how to address performance in your Go applications, you'll be able to bring small but effective habits to your programming and development cycle.
+
+-----
+
+### [100 Go Mistakes and How to Avoid Them](https://amzn.to/4p8eldS)
+
+<a href="https://amzn.to/4p8eldS"><img src="gobooks/covers/100-go-mistakes-and-how-to-avoid-them.png" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **Teiva Harsanyi**
+
+100 Go Mistakes and How to Avoid Them puts a spotlight on common errors in Go code you might not even know you're making. You'll explore key areas of the language such as concurrency, testing, data structures, and more—and learn how to avoid and fix mistakes in your own projects.
+
+-----
+
+### [Know Go: Generics](https://bitfieldconsulting.com/books/generics)
+
+<a href="https://bitfieldconsulting.com/books/generics"><img src="gobooks/covers/know-go-generics.png" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **John Arundel**
+
+Go's 2022 introduction of generics opens up a whole new world of programming in Go. This book explains everything you need to know to start writing generic functions and types, including type parameters, constraints, and the accompanying changes to the standard library. It also offers some advice on how (and whether) you should transition your existing projects to using the new generics features.
+
+-----
+
+### [The Power of Go: Tests](https://bitfieldconsulting.com/books/tests)
+
+<a href="https://bitfieldconsulting.com/books/tests"><img src="gobooks/covers/the-power-of-go-tests.png" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **John Arundel**
+
+Go's built-in support for testing puts tests front and centre of any software project, from command-line tools to sophisticated backend servers and APIs. This book will introduce you to all Go's testing facilities, show you how to use them to write tests for the trickiest things, and distils the collected wisdom of the Go community on best practices for testing Go programs. Crammed with hundreds of code examples, the book uses real tests and real problems to show you exactly what to do, step by step.
+
+-----
+
+### [Beyond Effective Go: Part 1 - Achieving High-Performance Code](https://amzn.to/4y3Un8a)
+
+<a href="https://amzn.to/4y3Un8a"><img src="gobooks/covers/beyond-effective-go.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* **Corey Scott**
+
+Are you an experienced Go developer that wants to be more productive? Do you want to write cleaner, faster, and easier to maintain code?
+Then the Beyond Effective Go book series is for you. This series is aimed at competent Gophers. It does not mess around with the basics but instead dives right into the daily problems that professional programmers face. Chiefly, how to write fast, robust applications and services that can be maintained and extended as requirements change.
+
+This book, Part 1 of the series, focuses on achieving high-performance code. You will learn which aspects of your application or code to focus on and when. You will have a suite of tools, software patterns, and recipes at your disposal to make your life easier. After reading, you will:
+
+- Understand the differences between Concurrency and Parallelism.
+- Identify and avoid concurrency issues like deadlock, starvation, livelock, and data races.
+- Understand the various concurrency interaction patterns and be able to apply the one that best fits the problem at hand.
+- Take a deep dive into Go's concurrency primitives and be able to apply them expertly but also avoid many of their gotchas.
+- Be able to diagnose concurrency and performance issues using Go's profiler, execution tracing, and benchmarking tools.
+- Be able to identify when code needs optimizing, what needs optimizing and how.
+- Have a catalog of concurrency and performance patterns that you can quickly apply to your projects.
+
+-----
+
+### [Domain-Driven Design with Golang](https://amzn.to/4p9m5fI)
+
+<a href="https://amzn.to/4p9m5fI"><img src="gobooks/covers/domain-driven-design-with-golang.jpg" width="120px"/></a>
+
+*Last published*: **2022**
+*Authors:* ****
+
+Use Golang to create simple, maintainable systems to solve complex business problems.
+
+Domain-driven design (DDD) is one of the most sought-after skills in the industry. This book provides you with step-by-step explanations of essential concepts and practical examples that will see you introducing DDD in your Go projects in no time. Domain-Driven Design with Golang starts by helping you gain a basic understanding of DDD, and then covers all the important patterns, such as bounded context, ubiquitous language, and aggregates. The latter half of the book deals with the real-world implementation of DDD patterns and teaches you how to build two systems while applying DDD principles, which will be a valuable addition to your portfolio. Finally, you'll find out how to build a microservice, along with learning how DDD-based microservices can be part of a greater distributed system. Although the focus of this book is Golang, by the end of this book you'll be able to confidently use DDD patterns outside of Go and apply them to other languages and even distributed systems.
+
+-----
+
+### [Building Distributed Applications in Gin](https://amzn.to/4bA5Fr4)
+
+<a href="https://amzn.to/4bA5Fr4"><img src="gobooks/covers/building-distributed-applications-in-gin.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* ****
 
 Gin is a high-performance HTTP web framework used to build web applications and microservices in Go. This book is designed to teach you the ins and outs of the Gin framework with the help of practical examples.
 
-You’ll start by exploring the basics of the Gin framework, before progressing to build a real-world RESTful API. Along the way, you’ll learn how to write custom middleware and understand the routing mechanism, as well as how to bind user data and validate incoming HTTP requests. The book also demonstrates how to store and retrieve data at scale with a NoSQL database such as MongoDB, and how to implement a caching layer with Redis. Next, you’ll understand how to secure and test your API endpoints with authentication protocols such as OAuth 2 and JWT. Later chapters will guide you through rendering HTML templates on the server-side and building a frontend application with the React web framework to consume API responses. Finally, you’ll deploy your application on Amazon Web Services (AWS) and learn how to automate the deployment process with a continuous integration and continuous delivery (CI/CD) pipeline.
+You'll start by exploring the basics of the Gin framework, before progressing to build a real-world RESTful API. Along the way, you'll learn how to write custom middleware and understand the routing mechanism, as well as how to bind user data and validate incoming HTTP requests. The book also demonstrates how to store and retrieve data at scale with a NoSQL database such as MongoDB, and how to implement a caching layer with Redis. Next, you'll understand how to secure and test your API endpoints with authentication protocols such as OAuth 2 and JWT. Later chapters will guide you through rendering HTML templates on the server-side and building a frontend application with the React web framework to consume API responses. Finally, you'll deploy your application on Amazon Web Services (AWS) and learn how to automate the deployment process with a continuous integration and continuous delivery (CI/CD) pipeline.
 
 By the end of this Gin book, you will be able to design, build, and deploy a production-ready distributed application from scratch using the Gin framework.
 
 -----
 
-### 2021 - [Network Programming with Go](https://nostarch.com/networkprogrammingwithgo)
+### [Network Programming with Go](https://amzn.to/4aLciqi)
 
-<img src="https://images3.penguinrandomhouse.com/cover/9781718500884" width="120px"/>
+<a href="https://amzn.to/4aLciqi"><img src="gobooks/covers/network-programming-with-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Adam Woodbeck**
 
 Network Programming with Go will help you leverage Go to write secure, readable, production-ready network code. Network Programming with Go is all you'll need to take advantage of Go's built-in concurrency, rapid compiling, and rich standard library.
 
 -----
 
-### 2021 - [Powerful Command-Line Applications in Go](https://pragprog.com/titles/rggo/powerful-command-line-applications-in-go/)
+### [Powerful Command-Line Applications in Go](https://amzn.to/4wtnWOP)
 
-<img src="https://pragprog.com/titles/rggo/powerful-command-line-applications-in-go/rggo-250.jpg" width="120px"/>
+<a href="https://amzn.to/4wtnWOP"><img src="gobooks/covers/powerful-command-line-applications-in-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Ricardo Gerardi**
 
 Write your own fast, reliable, and cross-platform command-line tools with the Go programming language. Go might be the fastest—and perhaps the most fun—way to automate tasks, analyze data, parse logs, talk to network services, or address other systems requirements. Create all kinds of command-line tools that work with files, connect to services, and manage external processes, all while using tests and benchmarks to ensure your programs are fast and correct.
 
 -----
 
-### 2021 - [Go by Example](https://www.manning.com/books/go-by-example)
+### [Go by Example](https://amzn.to/4vhHQLF)
 
-<img src="https://images.manning.com/360/480/resize/book/1/4162662-915f-4052-b061-c4ff15ddf0f1/Gumus-MEAP-HI.png" width="120px"/>
+<a href="https://amzn.to/4vhHQLF"><img src="gobooks/covers/go-by-example.png" width="120px"/></a>
 
-Go by Example is a practical guide to writing high-quality code that’s easy to test and maintain. The book is full of best practices to adopt and anti-patterns to dodge. It explores what makes Go so dramatically different from other languages, and how you can still leverage your existing skills into writing excellent Go code. Aimed at Go beginners looking to graduate to serious Go development, you’ll write and test command line applications, web API clients and servers, concurrent programs, and more.
+*Last published*: **2021**
+*Authors:* **İlker Baltacı**
+
+Go by Example is a practical guide to writing high-quality code that's easy to test and maintain. The book is full of best practices to adopt and anti-patterns to dodge. It explores what makes Go so dramatically different from other languages, and how you can still leverage your existing skills into writing excellent Go code. Aimed at Go beginners looking to graduate to serious Go development, you'll write and test command line applications, web API clients and servers, concurrent programs, and more.
 
 -----
 
-### 2021 - [Cloud Native Go - Building Reliable Services in Unreliable Environments](https://www.amazon.com/Cloud-Native-Go-Unreliable-Environments/dp/1492076333)
+### [Cloud Native Go - Building Reliable Services in Unreliable Environments](https://amzn.to/3SV0g7A)
 
-<img src="https://learning.oreilly.com/library/cover/9781492076322/120w/" width="120px"/>
+<a href="https://amzn.to/3SV0g7A"><img src="gobooks/covers/cloud-native-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Kevin Hoffman, Dan Nemeth**
 
 What do Docker, Kubernetes, and Prometheus have in common? All of these cloud native technologies are written in the Go programming language.
 This practical book shows you how to use Go's strengths to develop cloud native services that are scalable and resilient, even in an unpredictable environment.
@@ -560,9 +722,12 @@ You'll explore the composition and construction of these applications, from lowe
 
 -----
 
-### 2021 - [Everyday Go](https://openfaas.gumroad.com/l/everyday-golang)
+### [Everyday Go](https://openfaas.gumroad.com/l/everyday-golang)
 
-<img src="https://public-files.gumroad.com/7j27fj7c5xqxm3f9lyxj1pg8oa1w" width="120px"/>
+<a href="https://openfaas.gumroad.com/l/everyday-golang"><img src="gobooks/covers/everyday-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Alex Ellis**
 
 This book is a compilation of practical examples, lessons and techniques for Go developers. The topics cover the software lifecycle from learning the fundamentals, to software testing, to distribution and monitoring.
 
@@ -575,9 +740,12 @@ This book is a compilation of practical examples, lessons and techniques for Go 
 
 -----
 
-### 2021 - [Practical Go: Building Scalable Network and Non-Network Applications](https://practicalgobook.net)
+### [Practical Go: Building Scalable Network and Non-Network Applications](https://amzn.to/4vl3sXG)
 
-<img src="https://practicalgobook.net/book_cover.jpg" width="120px"/>
+<a href="https://amzn.to/4vl3sXG"><img src="gobooks/covers/practical-go-building-scalable-network.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Amit Saha**
 
 In Practical Go - Building Scalable Network + Non-Network Applications, you will learn to use the Go programming language to build robust, production-ready software applications. You will learn just enough to building command line tools and applications communicating over HTTP and gRPC.
 
@@ -594,161 +762,115 @@ This practical guide will cover:
 
 You will learn to implement best practices using hands-on examples written with modern practices in mind. With its focus on using
 the standard library packages as far as possible, Practical Go will give you a solid foundation for developing large applications
-using Go leveraging the best of the language’s ecosystem.
+using Go leveraging the best of the language's ecosystem.
 
 -----
 
+### [Black Hat Go](https://amzn.to/4tlEqaX)
 
-### 2022 - [Microservices with Go](https://www.packtpub.com/product/microservices-with-go/9781804617007)
-<img src="https://static.packt-cdn.com/products/9781804617007/cover/smaller" width="120px"/>
+[<img src="gobooks/covers/black-hat-go.jpg" width="120px"/>](https://amzn.to/4tlEqaX)
 
-This book covers the key benefits and common issues of microservices, helping you understand the problems microservice architecture helps to solve, the issues it usually introduces, and the ways to tackle them.
+*Last published*: **2020**
+*Authors:* **Tom Steele, Chris Patten, Dan Kottmann**
 
-You’ll start by learning about the importance of using the right principles and standards in order to achieve the key benefits of microservice architecture. The following chapters will explain why the Go programming language is one of the most popular languages for microservice development and lay down the foundations for the next chapters of the book. You’ll explore the foundational aspects of Go microservice development including service scaffolding, service discovery, data serialization, synchronous and asynchronous communication, deployment, and testing. After covering the development aspects, you’ll progress to maintenance and reliability topics. The last part focuses on more advanced topics of Go microservice development including system reliability, observability, maintainability, and scalability. In this part, you’ll dive into the best practices and examples which illustrate how to apply the key ideas to existing applications, using the services scaffolded in the previous part as examples.
-
-By the end of this book, you’ll have gained hands-on experience with everything you need to develop scalable, reliable and performant microservices using Go.
-
------
-
-
-### 2022 - [Event-Driven Architecture in Golang](https://www.packtpub.com/product/event-driven-architecture-in-golang/9781803238012)
-
-<img src="https://static.packt-cdn.com/products/9781803238012/cover/smaller" width="120px"/>
-
-Event-driven architecture in Golang is an approach used to develop applications that shares state changes asynchronously, internally, and externally using messages. EDA applications are better suited at handling situations that need to scale up quickly and the chances of individual component failures are less likely to bring your system crashing down. This is why EDA is a great thing to learn and this book is designed to get you started with the help of step-by-step explanations of essential concepts, practical examples, and more.
-
-You’ll begin building event-driven microservices, including patterns to handle data consistency and resiliency. Not only will you learn the patterns behind event-driven microservices but also how to communicate using asynchronous messaging with event streams. You’ll then build an application made of several microservices that communicates using both choreographed and orchestrated messaging.
-
-By the end of this book, you’ll be able to build and deploy your own event-driven microservices using asynchronous communication.
+In Black Hat Go, you'll learn how to write powerful and effective penetration testing tools in Go, a language revered for its speed and scalability. Start off with an introduction to Go fundamentals like data types, control structures, and error handling; then, dive into the deep end of Go's offensive capabilities.
 
 -----
 
-### 2022 - [Efficient Go: Data-Driven Performance Optimization](https://www.amazon.com/Efficient-Go-Data-Driven-Performance-Optimization/dp/1098105710)
+### [Writing An Interpreter In Go](https://amzn.to/45PIyGq)
 
-<img src="https://learning.oreilly.com/library/cover/9781098105709/250w/" width="120px"/>
+<a href="https://amzn.to/45PIyGq"><img src="gobooks/covers/writing-an-interpreter-in-go.png" width="120px"/></a>
 
-Software engineers today typically put performance optimizations low on the list of development priorities. But despite significant technological advancements and lower-priced hardware, software efficiency still matters. With this book, Go programmers will learn how to approach performance topics for applications written in this open source language.
+*Last published*: **2020**
+*Authors:* **Thorsten Ball**
 
-How and when should you apply performance efficiency optimization without wasting your time? Authors Bartlomiej Plotka and Frederic Branczyk provide the tools and knowledge you need to make your system faster using fewer resources. Once you learn how to address performance in your Go applications, you'll be able to bring small but effective habits to your programming and development cycle.
+In this book we will create a programming language together.
 
------
+We'll start with 0 lines of code and end up with a fully working interpreter for the Monkey* programming language.
 
-
-### 2022 - [100 Go Mistakes and How to Avoid Them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them)
-
-<img src="https://images.manning.com/360/480/resize/book/9/5990f3c-19fb-4945-b024-7280e616773f/Harsanyi-HI.png" width="120px"/>
-
-100 Go Mistakes and How to Avoid Them puts a spotlight on common errors in Go code you might not even know you’re making. You’ll explore key areas of the language such as concurrency, testing, data structures, and more—and learn how to avoid and fix mistakes in your own projects.
+Step by step. From tokens to output. All code shown and included. Fully tested.
 
 -----
 
-### 2022 - [Know Go: Generics](https://bitfieldconsulting.com/books/generics)
+### [Writing A Compiler In Go](https://amzn.to/4bCcFok)
 
-<a href="https://bitfieldconsulting.com/books/generics"><img src="https://images.squarespace-cdn.com/content/5e10bdc20efb8f0d169f85f9/9b9a3810-a9cb-46a8-8d03-ef45ebc09fe0/cover+%28no+version%29.png?content-type=image%2Fpng" width="120px"/></a>
+<a href="https://amzn.to/4bCcFok"><img src="gobooks/covers/writing-a-compiler-in-go.jpg" width="120px"/></a>
 
-Go's 2022 introduction of generics opens up a whole new world of programming in Go. This book explains everything you need to know to start writing generic functions and types, including type parameters, constraints, and the accompanying changes to the standard library. It also offers some advice on how (and whether) you should transition your existing projects to using the new generics features.
+*Last published*: **2020**
+*Authors:* **Thorsten Ball**
 
------
+This is the sequel to Writing An Interpreter In Go.
 
-### 2022 - [The Power of Go: Tests](https://bitfieldconsulting.com/books/tests)
+We're picking up right where we left off and write a compiler and a virtual machine for Monkey.
 
-<a href="https://bitfieldconsulting.com/books/tests"><img src="https://images.squarespace-cdn.com/content/5e10bdc20efb8f0d169f85f9/28e50f0d-5d77-42a4-8122-1e6d2a581849/cover+%28no+version%29.png?content-type=image%2Fpng" width="120px"/></a>
+Runnable and tested code front and center, built from the ground up, step by step — just like before.
 
-Go’s built-in support for testing puts tests front and centre of any software project, from command-line tools to sophisticated backend servers and APIs. This book will introduce you to all Go’s testing facilities, show you how to use them to write tests for the trickiest things, and distils the collected wisdom of the Go community on best practices for testing Go programs. Crammed with hundreds of code examples, the book uses real tests and real problems to show you exactly what to do, step by step.
+But this time, we're going to define bytecode, compile Monkey and execute it in our very own virtual machine.
 
------
-
-### 2022 - [Beyond Effective Go: Part 1 - Achieving High-Performance Code](https://coreyscott.dev/book/)
-
-<a href="https://coreyscott.dev/book/"><img src="https://m.media-amazon.com/images/P/B0BCKBP3C5.01._SCLZZZZZZZ_SX500_.jpg" width="120px"/></a>
-
-Are you an experienced Go developer that wants to be more productive? Do you want to write cleaner, faster, and easier to maintain code?
-Then the Beyond Effective Go book series is for you. This series is aimed at competent Gophers. It does not mess around with the basics but instead dives right into the daily problems that professional programmers face. Chiefly, how to write fast, robust applications and services that can be maintained and extended as requirements change.
-
-This book, Part 1 of the series, focuses on achieving high-performance code. You will learn which aspects of your application or code to focus on and when. You will have a suite of tools, software patterns, and recipes at your disposal to make your life easier. After reading, you will:
-
-- Understand the differences between Concurrency and Parallelism.
-- Identify and avoid concurrency issues like deadlock, starvation, livelock, and data races.
-- Understand the various concurrency interaction patterns and be able to apply the one that best fits the problem at hand.
-- Take a deep dive into Go’s concurrency primitives and be able to apply them expertly but also avoid many of their gotchas.
-- Be able to diagnose concurrency and performance issues using Go’s profiler, execution tracing, and benchmarking tools.
-- Be able to identify when code needs optimizing, what needs optimizing and how.
-- Have a catalog of concurrency and performance patterns that you can quickly apply to your projects.
+It's the next step in Monkey's evolution.
 
 -----
 
-### 2022 - [Domain-Driven Design with Golang](https://www.packtpub.com/product/domain-driven-design-with-golang/9781804613450)
+### [Hands-On Software Engineering with Golang](https://amzn.to/4gtAf9l)
 
-<a href="https://www.packtpub.com/product/domain-driven-design-with-golang/9781804613450"><img src="https://static.packt-cdn.com/products/9781804613450/cover/smaller" width="120px"/></a>
+<a href="https://amzn.to/4gtAf9l"><img src="gobooks/covers/hands-on-software-engineering-with-golang.jpg" width="120px"/></a>
 
-Use Golang to create simple, maintainable systems to solve complex business problems.
+*Last published*: **2020**
+*Authors:* ****
 
-Domain-driven design (DDD) is one of the most sought-after skills in the industry. This book provides you with step-by-step explanations of essential concepts and practical examples that will see you introducing DDD in your Go projects in no time. Domain-Driven Design with Golang starts by helping you gain a basic understanding of DDD, and then covers all the important patterns, such as bounded context, ubiquitous language, and aggregates. The latter half of the book deals with the real-world implementation of DDD patterns and teaches you how to build two systems while applying DDD principles, which will be a valuable addition to your portfolio. Finally, you’ll find out how to build a microservice, along with learning how DDD-based microservices can be part of a greater distributed system. Although the focus of this book is Golang, by the end of this book you’ll be able to confidently use DDD patterns outside of Go and apply them to other languages and even distributed systems.
+This Golang book distills industry best practices for writing lean Go code that is easy to test and maintain, and helps you to explore its practical implementation by creating a multi-tier application called Links 'R' Us from scratch. You'll be guided through all the steps involved in designing, implementing, testing, deploying, and scaling an application. Starting with a monolithic architecture, you'll iteratively transform the project into a service-oriented architecture (SOA) that supports the efficient out-of-core processing of large link graphs.
 
------
-
-### 2023 - [Go programming language secure coding practices guide](https://checkmarx.gitbooks.io/go-scp/) *Free*
-
-The main goal of this book is to help developers avoid common mistakes while at the same time, learning a new programming language through a "hands-on approach". This book provides a good level of detail on "how to do it securely" showing what kind of security problems could arise during development.
+You'll learn about various cutting-edge and advanced software engineering techniques such as building extensible data processing pipelines, designing APIs using gRPC, and running distributed graph processing algorithms at scale.  Finally, you'll learn how to compile and package your Go services using Docker and automate their deployment to a Kubernetes cluster.
 
 -----
 
-### 2023 - [Network Automation with Go](https://www.packtpub.com/en-us/product/network-automation-with-go-9781800560925)
+### [A Go Developer's Notebook](https://leanpub.com/GoNotebook/)
 
-<a href="https://www.packtpub.com/en-us/product/network-automation-with-go-9781800560925"><img src="https://content.packt.com/_/image/original/B16971/cover_image.jpg" width="120px"/></a>
+<a href="https://leanpub.com/GoNotebook/"><img src="gobooks/covers/a-go-developers-notebook.png" width="120px"/></a>
 
-Go’s built-in first-class concurrency mechanisms make it an ideal choice for long-lived low-bandwidth I/O operations, which are typical requirements of network automation and network operations applications. This book provides a quick overview of Go and hands-on examples within it to help you become proficient with Go for network automation. It’s a practical guide that will teach you how to automate common network operations and build systems using Go. The first part takes you through a general overview, use cases, strengths, and inherent weaknesses of Go to prepare you for a deeper dive into network automation. You’ll explore the common network automation areas and challenges, what language features you can use in each of those areas, and the common software tools and packages. To help deepen your understanding, you’ll also work through real-world network automation problems and apply hands-on solutions to them. By the end of this book, you’ll be well-versed with Go and have a solid grasp on network automation.
+*Last published*: **2019**
+*Authors:* ****
 
------
-
-### 2024 - [The Power of Go: Tools](https://bitfieldconsulting.com/books/tools)
-
-<a href="https://bitfieldconsulting.com/books/tools"><img src="https://images.squarespace-cdn.com/content/5e10bdc20efb8f0d169f85f9/6057eba2-a450-48c6-96e3-8cf7a14d6abe/cover+%28no+version%29.png?content-type=image%2Fpng" width="120px"/></a>
-
-Go is a popular choice for writing DevOps and systems programs, and command-line tools in particular. How can we write simple, powerful, idiomatic, and even beautiful tools in Go? This book covers all the necessary techniques: functional options, flags and arguments, files and filesystems, executing commands, writing shells and pipelines, JSON and YAML wrangling, and even sophisticated API clients.
-
-Even more importantly, the book teaches you how to _think_ like a master software engineer: how to break down problems into manageable chunks, how to test functions before they're written, and how to design Go CLIs that delight users.
+A developer's experience in golang.
 
 -----
 
-### 2024 - [Build an Orchestrator in Go](https://www.manning.com/books/build-an-orchestrator-in-go)
+### [Hands-On Dependency Injection in Go](https://amzn.to/4knFw1R)
 
-<img src="https://images.manning.com/360/480/resize/book/2/464ad9c-7d6e-4a4d-ac4c-032adace14c1/Boring-OS-HI.png" width="120px"/>
+<a href="https://amzn.to/4knFw1R"><img src="gobooks/covers/hands-on-dependency-injection-in-go.jpg" width="120px"/></a>
 
-Understand Kubernetes and other orchestration systems deeply by building your own using Go and the Docker API.
+*Last published*: **2018**
+*Authors:* **Corey Scott**
 
-Orchestration systems like Kubernetes coordinate other software subsystems and services to create a complete organized system. Although orchestration tools have a reputation for complexity, they’re designed around few important patterns that apply across many aspects of software development. Build an Orchestrator in Go reveals the inner workings of orchestration frameworks by guiding you as you design and implement your own using the Go SDK. As you create your own orchestration framework, you’ll improve your understanding of Kubernetes and its role in distributed system design. You’ll also build the skills required to design custom orchestration solutions for those times when an out-of-the-box solution isn’t a good fit.
+Hands-On Dependency Injection in Go takes you on a journey, teaching you about refactoring existing code to adopt dependency injection (DI) using various methods available in Go.
 
------
+Of the six methods introduced in this book, some are conventional, such as constructor or method injection, and some unconventional, such as just-in-time or config injection. Each method is explained in detail, focusing on their strengths and weaknesses, and is followed with a step-by-step example of how to apply it. With plenty of examples, you will learn how to leverage DI to transform code into something simple and flexible.
 
-### 2024 - [Explore Go: Cryptography](https://bitfieldconsulting.com/books/crypto)
-
-<a href="https://bitfieldconsulting.com/books/crypto"><img src="https://images.squarespace-cdn.com/content/5e10bdc20efb8f0d169f85f9/30992a12-3d08-4026-a1e0-19a50c9dc2ef/cover+%28no+version%29.png" width="120px"/></a>
-
-Much of the modern world is built on cryptography, and this book introduces readers to the fundamental principles of ciphers, keys, and hashing. It traces the development of increasingly sophisticated cryptographic schemes from the Caesar cipher to SHA-256 and AES-GCM, including dozens of example Go programs and coding challenges. The book concludes with a review of best practices for handling encryption and authentication in Go applications.
+Hands-On Dependency Injection in Go takes a pragmatic approach and focuses heavily on the code, user experience, and how to achieve long-term benefits through incremental changes.
 
 -----
 
-### 2024 - [Practical guide for building a blockchain from scratch in Go with gRPC](https://github.com/volodymyrprokopyuk/go-blockchain) *Free*
+### [Security with Go](https://amzn.to/3MbSHqc)
 
-A foundational and practical guide for effectively learning the fundamental blockchain concepts and
-progressively building a blockchain from scratch in Go with gRPC. An interesting and challenging
-adventure that takes you from the foundational concepts and purpose through the technical design and
-implementation to the practical testing and usage of the proposed blockchain. Simple, yet non-trivial. Concise, yet detailed. Practical, yet well-grounded.
+<a href="https://amzn.to/3MbSHqc"><img src="gobooks/covers/security-with-go.jpg" width="120px"/></a>
 
------
+*Last published*: **2018**
+*Authors:* ****
 
-### 2025 - [Go at Scale: Patterns for Professional Development](https://rezmoss.com/go-at-scale/)
+Security with Go is the first Golang security book, and it is useful for both blue team and red team applications. With this book, you will learn how to write secure software, monitor your systems, secure your data, attack systems, and extract information.
 
-<a href="https://rezmoss.com/go-at-scale/"><img src="https://rezmoss.com/images/go-at-scale-cover-1.jpg" width="120x"></a>
+Defensive topics include cryptography, forensics, packet capturing, and building secure web applications.
 
-Go at Scale is your comprehensive guide to writing scalable, maintainable, and efficient Go code. Moving beyond the basics, this book dives deep into advanced patterns and practices used in real-world applications.
+Offensive topics include brute force, port scanning, packet injection, web scraping, social engineering, and post exploitation techniques.
 
 -----
 
 ### [Go with the Domain: Building Modern Business Software in Go](https://threedots.tech/go-with-the-domain/) *Free*
 
-<a href="https://threedots.tech/go-with-the-domain/"><img src="https://threedots.tech/img/go-with-domain-cover-160-retina.jpg" width="120px"/></a>
+<a href="https://threedots.tech/go-with-the-domain/"><img src="gobooks/covers/go-with-the-domain.jpg" width="120px"/></a>
+
+*Last published*: ****
+*Authors:* **Three Dots Labs**
 
 *Go with the Domain* is a book on building Go applications that solve complex problems in an idiomatic way.
 It features techniques like Domain-Driven Design, Clean Architecture, CQRS (Command Query Responsibility Segregation), and other patterns.
@@ -760,7 +882,10 @@ Chapters go through refactoring of the project to show common anti-patterns and 
 
 ### [Spaceship Go](https://blasrodri.github.io/spaceship-go-gh-pages/) *Free*
 
-<img src="https://raw.githubusercontent.com/blasrodri/spaceship-go/master/src/img/cover.svg" width="120px"/>
+<a href="https://blasrodri.github.io/spaceship-go-gh-pages/"><img src="gobooks/covers/spaceship-go.svg" width="120px"/></a>
+
+*Last published*: ****
+*Authors:* ****
 
 Spaceship Go is a journey to Go's Standard Library. Several key packages are explored in order to understand
 why they are useful, and also how they are implemented under the hood. It serves as a reference of some key
@@ -769,9 +894,12 @@ code.
 
 -----
 
-### [Ultimate Go Notebook](https://courses.ardanlabs.com/courses/ultimate-go-notebook)
+### [Ultimate Go Notebook](https://amzn.to/4byPxGh)
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/411o0BkQoQL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" width="120px"/>
+<a href="https://amzn.to/4byPxGh"><img src="gobooks/covers/ultimate-go-notebook.jpg" width="120px"/></a>
+
+*Last published*: ****
+*Authors:* **Ardan Labs**
 
 The Ultimate Go Notebook is the official companion book for the Ardan Labs Ultimate Go class.
 
@@ -779,37 +907,59 @@ With this book, you will learn how to write more idiomatic and performant code w
 
 This notebook has been designed to provide a reference to everything mentioned in class, as if they were your own personal notes.
 
+
 ## Web Development
 
------
+### [Mastering Go, 4rd edition](https://amzn.to/4aMT3N8)
 
-### 2019 - [Learn Data Structures and Algorithms with Golang](https://www.packtpub.com/product/learn-data-structures-and-algorithms-with-golang/9781789618501)
+<a href="https://amzn.to/4aMT3N8"><img src="gobooks/covers/mastering-go-4th-edition.jpg" width="120px"/></a>
 
-<img src="https://static.packt-cdn.com/products/9781789618501/cover/smaller" width="120px"/>
+*Last published*: **2024**
+*Authors:* **Mihalis Tsoukalos**
 
-The book begins with an introduction to Go data structures and algorithms. You'll learn how to store data using linked lists, arrays, stacks, and queues. Moving ahead, you'll discover how to implement sorting and searching algorithms, followed by binary search trees. This book will also help you improve the performance of your applications by stringing data types and implementing hash structures in algorithm design. Finally, you'll be able to apply traditional data structures to solve real-world problems.
-By the end of the book, you'll have become adept at implementing classic data structures and algorithms in Go, propelling you to become a confident Go programmer.
-
------
-
-### 2020 - [12 Factor Applications with Docker and Go](https://leanpub.com/12fa-docker-golang)
-<a href="https://leanpub.com/12fa-docker-golang"><img src="https://s3.amazonaws.com/titlepages.leanpub.com/12fa-docker-golang/hero?1503844662" width="120px"/></a>
-
-A book filled with examples on how to use Docker and Go to create the ultimate 12 Factor applications. It goes over individual steps of [The Twelve-Factor App](https://12factor.net/) guidelines and how to implement them with Go and Docker.
+This is the 4rd edition of Mastering Go. There exist many exciting new topics in this latest edition including writing RESTful services, working with the Websocket protocol, using GitHub Actions and GitLab Actions for Go projects as well as an entirely new chapter on Generics and the development of lots of practical utilities.
 
 -----
 
-### 2021 - [Webapps in Go the anti textbook](https://github.com/thewhitetulip/web-dev-golang-anti-textbook) *Free*
+### [Let's Go!](https://lets-go.alexedwards.net/)
 
-<img src="https://github.com/thewhitetulip/web-dev-golang-anti-textbook/raw/master/cover.jpg" width="120px"/>
+<a href="https://lets-go.alexedwards.net/"><img src="gobooks/covers/lets-go.png" width="120px"/></a>
+
+*Last published*: **2023**
+*Authors:* **Alex Edwards**
+
+Let's Go teaches you step-by-step how to create fast, secure and maintainable web applications using Go. It guides you through the start-to-finish build of a real-world application — covering topics like how to structure your code, manage dependencies, authenticate and authorize users, secure your server and test your application.
+
+-----
+
+### [Let's Go Further](https://lets-go-further.alexedwards.net/)
+
+<a href="https://lets-go-further.alexedwards.net/"><img src="gobooks/covers/lets-go-further.png" width="120px"/></a>
+
+*Last published*: **2023**
+*Authors:* **Alex Edwards**
+
+Let's Go Further helps you extend and expand your knowledge of Go — taking you beyond the basics and guiding you through advanced patterns for developing, managing and deploying APIs and web applications. By the end of the book you'll have all the knowledge you need to create robust and professional APIs which act as backends for SPAs and native mobile applications, or function as stand-alone services.
+
+-----
+
+### [Webapps in Go the anti textbook](https://github.com/thewhitetulip/web-dev-golang-anti-textbook) *Free*
+
+<a href="https://github.com/thewhitetulip/web-dev-golang-anti-textbook"><img src="gobooks/covers/webapps-in-go-the-anti-textbook.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* ****
 
 This book was written to teach how to develop web applications in Go for people who know a bit of Go and have basic information about web applications in general. We (you) will build a webapp without using a third party framework and using as few external libraries as possible. The advantage is that you'll learn a lot when you code without a framework.
 
 -----
 
-### 2021 - [Build SaaS apps in Go](https://buildsaasappingo.com)
+### [Build SaaS apps in Go](https://amzn.to/3STz7Sz)
 
-<a href="https://buildsaasappingo.com"><img src="https://buildsaasappingo.com/public/basaig.jpg" width="120"/></a>
+<a href="https://amzn.to/3STz7Sz"><img src="gobooks/covers/build-saas-apps-in-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* ****
 
 Together, we'll build a strong, API-first, reusable codebase suitable for
 building a SaaS or vanilla web application. By the end of the book you'll have
@@ -817,7 +967,10 @@ a solid framework to use as the starting point for future projects.
 
 -----
 
-### 2021 - [Go Brain Teasers](https://gum.co/Qkmou)
+### [Go Brain Teasers](https://amzn.to/4vhK8uf)
+
+*Last published*: **2021**
+*Authors:* **Miki Tebeka**
 
 The Go programming language is a simple one, but like all other languages it has its quirks. This book uses these quirks as a teaching opportunity. By understanding the gaps in your knowledge - you'll become better at what you do.
 
@@ -825,68 +978,80 @@ This book contains 25 mind bending quizzes and answers. You can view a sample ch
 
 -----
 
-### 2021 - [Creative DIY Microcontroller Projects with TinyGo and WebAssembly](https://www.packtpub.com/product/creative-diy-microcontroller-projects-with-tinygo-and-webassembly/9781800560208)
+### [Creative DIY Microcontroller Projects with TinyGo and WebAssembly](https://amzn.to/4f8MfuD)
 
-<img src="https://static.packt-cdn.com/products/9781800560208/cover/smaller" width="120px"/>
+<a href="https://amzn.to/4f8MfuD"><img src="gobooks/covers/creative-diy-microcontroller-projects-tinygo-webassembly.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* ****
 
 While often considered a fast and compact programming language, Go usually creates large executables that are difficult to run on low-memory or low-powered devices such as microcontrollers or IoT. TinyGo is a new compiler that allows developers to compile their programs for such low-powered devices. As TinyGo supports all the standard features of the Go programming language, you won't have to tweak the code to fit on the microcontroller.
 
-This book is a hands-on guide packed full of interesting DIY projects that will show you how to build embedded applications. You will learn how to program sensors and work with microcontrollers such as Arduino UNO and Arduino Nano IoT 33. The chapters that follow will show you how to develop multiple real-world embedded projects using a variety of popular devices such as LEDs, 7-segment displays, and timers. Next, you will progress to build interactive prototypes such as a traffic lights system, touchless hand wash timer, and more. As you advance, you’ll create an IoT prototype of a weather alert system and display those alerts on the TinyGo WASM dashboard. Finally, you will build a home automation project that displays stats on the TinyGo WASM dashboard.
+This book is a hands-on guide packed full of interesting DIY projects that will show you how to build embedded applications. You will learn how to program sensors and work with microcontrollers such as Arduino UNO and Arduino Nano IoT 33. The chapters that follow will show you how to develop multiple real-world embedded projects using a variety of popular devices such as LEDs, 7-segment displays, and timers. Next, you will progress to build interactive prototypes such as a traffic lights system, touchless hand wash timer, and more. As you advance, you'll create an IoT prototype of a weather alert system and display those alerts on the TinyGo WASM dashboard. Finally, you will build a home automation project that displays stats on the TinyGo WASM dashboard.
 
 By the end of this microcontroller book, you will be equipped with the skills you need to build real-world embedded projects using the power of TinyGo.
 
 -----
 
-### 2021 - [Distributed Services with Go Your Guide to Reliable, Scalable, and Maintainable Systems](https://pragprog.com/titles/tjgo/distributed-services-with-go/)
+### [Distributed Services with Go Your Guide to Reliable, Scalable, and Maintainable Systems](https://amzn.to/3SU8lJJ)
 
-<img src="https://pragprog.com/titles/tjgo/distributed-services-with-go/tjgo.jpg" width="120px"/>
+<a href="https://amzn.to/3SU8lJJ"><img src="gobooks/covers/distributed-services-with-go.jpg" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Travis Jeffery**
 
 Take your Go skills to the next level by learning how to design, develop, and deploy a distributed service. Start from the bare essentials of storage handling, work your way through networking a client and server, turn that single-node application into a distributed system with service discovery and consensus, and then deploy your service to the cloud. All this will make coding in your day job or side projects easier, faster, and more fun.
 
 -----
 
-### 2021 - [Build Systems with Go: Everything a Gopher Must Know](https://www.amazon.com/dp/B091FX4CZX)
+### [Build Systems with Go: Everything a Gopher Must Know](https://amzn.to/4b3VmeX)
 
-<img src="https://raw.githubusercontent.com/juanmanuel-tirado/savetheworldwithgo/master/img/buildsystems.png" width="120px"/>
+<a href="https://amzn.to/4b3VmeX"><img src="gobooks/covers/build-systems-with-go.png" width="120px"/></a>
+
+*Last published*: **2021**
+*Authors:* **Juan Manuel Tirado**
 
 The Go ecosystem is helping developers to build distributed and scalable systems efficiently. If you plan to jump into this fascinating world, you must know how Go can help you to build REST APIs, use SQL/NoSQL databases, data streaming platforms, gRPC, design your own CLIs, or how to log your programs efficiently just to mention a few. *Build Systems with GO: Everything a Gopher Must Know* is split into two blocks: the first explores the Go language and its standard library, the second one provides the reader with examples and explanations of the most powerful libraries to be used in any Go development. With more than 200 detailed and straight-forward examples [available at GitHub](https://github.com/juanmanuel-tirado/savetheworldwithgo), this book helps early adopters and experienced developers to have a real view of what a system built with Go looks like.
 
 -----
 
-### 2023 - [Let's Go!](https://lets-go.alexedwards.net/)
+### [12 Factor Applications with Docker and Go](https://amzn.to/4wx1qVp)
+<a href="https://amzn.to/4wx1qVp"><img src="gobooks/covers/12-factor-applications-with-docker-and-go.jpg" width="120px"/></a>
 
-<img src="https://lets-go.alexedwards.net/sample/assets/img/cover.png" width="120px"/>
+*Last published*: **2020**
+*Authors:* ****
 
-Let's Go teaches you step-by-step how to create fast, secure and maintainable web applications using Go. It guides you through the start-to-finish build of a real-world application — covering topics like how to structure your code, manage dependencies, authenticate and authorize users, secure your server and test your application.
-
------
-
-### 2023 - [Let's Go Further](https://lets-go-further.alexedwards.net/)
-
-<img src="https://lets-go-further.alexedwards.net/sample/assets/img/cover.png" width="120px"/>
-
-Let’s Go Further helps you extend and expand your knowledge of Go — taking you beyond the basics and guiding you through advanced patterns for developing, managing and deploying APIs and web applications. By the end of the book you'll have all the knowledge you need to create robust and professional APIs which act as backends for SPAs and native mobile applications, or function as stand-alone services.
+A book filled with examples on how to use Docker and Go to create the ultimate 12 Factor applications. It goes over individual steps of [The Twelve-Factor App](https://12factor.net/) guidelines and how to implement them with Go and Docker.
 
 -----
 
-### 2024 - [Mastering Go, 4rd edition](https://www.packtpub.com/en-us/product/mastering-go-9781805127147)
+### [Learn Data Structures and Algorithms with Golang](https://amzn.to/3QHSwoY)
 
-<img src="https://content.packt.com/_/image/original/B21003/cover_image.jpg" width="120px"/>
+<a href="https://amzn.to/3QHSwoY"><img src="gobooks/covers/learn-data-structures-and-algorithms-with-golang.jpg" width="120px"/></a>
 
-This is the 4rd edition of Mastering Go. There exist many exciting new topics in this latest edition including writing RESTful services, working with the Websocket protocol, using GitHub Actions and GitLab Actions for Go projects as well as an entirely new chapter on Generics and the development of lots of practical utilities.
+*Last published*: **2019**
+*Authors:* ****
+
+The book begins with an introduction to Go data structures and algorithms. You'll learn how to store data using linked lists, arrays, stacks, and queues. Moving ahead, you'll discover how to implement sorting and searching algorithms, followed by binary search trees. This book will also help you improve the performance of your applications by stringing data types and implementing hash structures in algorithm design. Finally, you'll be able to apply traditional data structures to solve real-world problems.
+By the end of the book, you'll have become adept at implementing classic data structures and algorithms in Go, propelling you to become a confident Go programmer.
 
 -----
 
-### [Web Development with Go: Learn to Create Real World Web Applications using Go](https://www.usegolang.com/)
+### [Web Development with Go: Learn to Create Real World Web Applications using Go](https://amzn.to/44mqpi7)
+
+*Last published*: ****
+*Authors:* **Jon Calhoun**
 
 Web Development with Go was written to teach both beginners and experts how to create and deploy a real web application. You won't be building a boilerplate TODO list, but will instead be creating and deploying a production ready photo gallery application, similar to Pixieset, from scratch. The book assumes no previous web development experience and covers everything you need to know to successfully build your own web application.
 
 -----
 
-
 ### [Wasm Cooking with Golang](https://k33g.gumroad.com/l/wasmcooking)
 
-<img src="https://public-files.gumroad.com/variants/1s2iptp25eyxyd3mkj55bcdp0ije/4d4cb575366005157970186bb171da8f6b6b8bb857dcdd1f8e93774cc5f0900d" width="120px"/>
+<a href="https://k33g.gumroad.com/l/wasmcooking"><img src="gobooks/covers/wasm-cooking-with-golang.jpg" width="120px"/></a>
+
+*Last published*: ****
+*Authors:* ****
 
 You will learn how to generate WebAssembly applications with GoLang and run WebAssembly in your browser and out of your browser.
 
@@ -900,7 +1065,10 @@ This e-book comprises 23 complete recipes with the code examples necessary to re
 
 ### [Generative Art in Go](https://p5v.gumroad.com/l/generative-art-in-golang)
 
-<img src="https://preslav.me/img/pages/generative-art-in-golang/book-cover_hu28601a535f0407a9b32fcb414631175c_63095_1320x0_resize_q75_box.jpg" width="120px"/>
+<a href="https://p5v.gumroad.com/l/generative-art-in-golang"><img src="gobooks/covers/generative-art-in-go.jpg" width="120px"/></a>
+
+*Last published*: ****
+*Authors:* ****
 
 Generative art is a unique form of artistic expression, building bridges between computer programming, randomness, and visual aesthetics.
 
@@ -910,15 +1078,22 @@ This short book will introduce novice and experienced Go programmers to the beau
 
 ### [Building Web Apps with Go](https://codegangsta.gitbooks.io/building-web-apps-with-go/content/) *Free*
 
+*Last published*: ****
+*Authors:* ****
+
 A good resource for start Building Web Apps with Go.
 
 -----
 
 ### [Build Web Application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/index.html) *Free*
 
+*Last published*: ****
+*Authors:* **Astaxie**
+
 Another awesome book for learning Web Development in Golang.
 
 -----
+
 
 ## Resources
 
@@ -931,7 +1106,7 @@ Another awesome book for learning Web Development in Golang.
 ### [Coursera Specialization: Programming with Go](https://www.coursera.org/specializations/google-golang/)
 ### [Course: Understand Go's In-Depth Mechanics](https://www.udemy.com/course/learn-go-the-complete-bootcamp-course-golang/?referralCode=5CE6EB34E2B1EF4A7D37)
 ### [Course: Mastering Go Programming](https://www.udemy.com/course/mastering-go-programming)
-### [Course: Web Development with Google’s Go Programming Language](https://www.udemy.com/course/go-programming-language)
+### [Course: Web Development with Google's Go Programming Language](https://www.udemy.com/course/go-programming-language)
 ### [Golangbot.com Articles](https://golangbot.com/)
 ### [Tuxerrante repo on go exercises](https://github.com/tuxerrante/go_exercises)
 
